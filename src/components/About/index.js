@@ -1,4 +1,8 @@
 import './style.css';
 export default function About() {
-	return <section className="section section-about">About</section>;
+	return (
+		<section id="about" className="section section-about">
+			About
+		</section>
+	);
 }

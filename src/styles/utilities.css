@@ -1,3 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+:root {
+	--ff-main: 'Space Grotesk', sans-serif;
+	--ff-logo: 'Cedarville Cursive', cursive;
+}
+/* font-family */
+.ff-main {
+	font-family: var(--ff-main);
+}
+.ff-logo {
+	font-family: var(--ff-logo);
+	letter-spacing: 1px;
+}
 /*************** POSITION **************/
 .relative {
 	position: relative;
@@ -65,7 +79,16 @@
 }
 
 /*************** SHARED STYLES **************/
+* {
+	box-sizing: border-box;
+}
+body {
+	width: 100vw;
+	background-color: black;
+	color: white;
+}
 .section {
 	height: 100vh;
 	padding: 1rem;
+	border: 1px solid white;
 }

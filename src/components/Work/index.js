@@ -1,4 +1,8 @@
 import './style.css';
 export default function Work() {
-	return <section className="section section-work">Work</section>;
+	return (
+		<section id="work" className="section section-work">
+			Work
+		</section>
+	);
 }
