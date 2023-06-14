@@ -1,3 +1,50 @@
+.cube-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	perspective: 10000px;
+}
+.cube {
+	width: 400px;
+	height: 400px;
+	transform-style: preserve-3d;
+}
+.card {
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	text-align: center;
+	padding: 100px 0;
+}
+#front {
+	background-color: red;
+	transform: translateZ(200px);
+}
+#back {
+	background-color: orange;
+	transform: translateZ(-200px);
+}
+#left {
+	background-color: yellow;
+	transform: rotateY(90deg);
+	right: 200px;
+}
+#right {
+	background-color: green;
+	transform: rotateY(-90deg);
+	left: 200px;
+}
+#top {
+	background-color: blue;
+	transform: rotateX(90deg);
+	bottom: 200px;
+}
+#bottom {
+	background-color: violet;
+	transform: rotateX(-90deg);
+	top: 200px;
+}
 .circle {
 	width: 400px;
 	aspect-ratio: 1;

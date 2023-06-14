@@ -110,10 +110,9 @@ body {
 	background-color: black;
 	color: white;
 	font-family: var(--ff-main);
-	overflow-x: hidden;
+	/* overflow-x: hidden; */
 }
 .section {
 	height: 100vh;
 	border: 1px solid white;
-	padding-inline: 5rem;
 }
