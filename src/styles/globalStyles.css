@@ -1,0 +1,66 @@
+/*************** POSITION **************/
+.relative {
+	position: relative;
+}
+.absolute {
+	position: absolute;
+}
+.sticky {
+	position: sticky;
+}
+.fixed {
+	position: fixed;
+}
+/*************** DISPLAY **************/
+.block {
+	display: block;
+}
+.inline-block {
+	display: inline-block;
+}
+.grid {
+	display: grid;
+}
+.flex {
+	display: flex;
+}
+.flex-col {
+	flex-direction: column;
+}
+.justify-center {
+	justify-content: center;
+}
+.justify-space {
+	justify-content: space-between;
+}
+.align-center {
+	align-items: center;
+}
+.align-end {
+	align-items: flex-end;
+}
+/*************** Content **************/
+.margin-center {
+	margin: 0 auto;
+}
+.w-100 {
+	width: 100%;
+}
+.h-100 {
+	height: 100%;
+}
+
+/*************** Content **************/
+/* text styles */
+.text-right {
+	text-align: right;
+}
+.text-center {
+	text-align: center;
+}
+.uppercase {
+	text-transform: uppercase;
+}
+.lowercase {
+	text-transform: lowercase;
+}
