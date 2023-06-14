@@ -9,6 +9,9 @@ export default function Home() {
 		offset: ['start end', 'end start'],
 	});
 	const openBox = useTransform(scrollYProgress, [0, 0.3], [-500, 400]);
+	const frameOut = useTransform(scrollYProgress, [0, 0.5], [-250, 300]);
+	const frameRotateX = useTransform(scrollYProgress, [0.5, 0.55], [90, 30]);
+	const frameRotateY = useTransform(scrollYProgress, [0.5, 0.55], [0, -30]);
 
 	return (
 		<div className="section-wrapper">
@@ -34,26 +37,36 @@ export default function Home() {
 							<div id="bottom" className="card">
 								Bottom
 							</div>
+							<motion.div
+								id="photo-cards"
+								className="card"
+								style={{
+									bottom: frameOut,
+									rotateX: frameRotateX,
+									rotateY: frameRotateY,
+								}}>
+								<motion.div className="absolute photo-frame frame-1">
+									<div className="photo-frame-image"></div>
+									<div className="photo-frame-text">My Card1</div>
+								</motion.div>
+
+								<motion.div className="absolute photo-frame frame-2">
+									<div className="photo-frame-image"></div>
+									<div className="photo-frame-text">My Card2</div>
+								</motion.div>
+								<motion.div className="absolute photo-frame frame-3">
+									<div className="photo-frame-image"></div>
+									<div className="photo-frame-text">My Card3</div>
+								</motion.div>
+								<motion.div className="absolute photo-frame frame-4">
+									<div className="photo-frame-image"></div>
+									<div className="photo-frame-text">My Card4</div>
+								</motion.div>
+							</motion.div>
 						</div>
 					</div>
 				</div>
 			</section>
-			{/* <motion.section ref={targetRef} className="section page-2">
-				<div className="relative h-100 container">
-					<div className="absolute circle">
-						<motion.div style={{y}} className="absolute profile"></motion.div>
-					</div>
-					<div className="intro-text">
-						<motion.h1 style={{translateX: textToRight}} className="absolute">
-							Hi, I'm
-						</motion.h1>
-						<motion.h1 style={{translateX: textToLeft}} className="absolute">
-							Lilian
-						</motion.h1>
-					</div>
-				</div>
-				Home
-			</motion.section> */}
 			<section id="home" className="section section-home">
 				Home
 			</section>

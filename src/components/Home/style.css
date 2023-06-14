@@ -49,44 +49,65 @@
 	background-color: var(--blue);
 	transform: rotateX(-90deg);
 }
-.section-1-text {
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-.section-1-text h1 {
-	font-size: 18vw;
-	letter-spacing: -30px;
-}
-.circle {
-	width: 400px;
-	aspect-ratio: 1;
-	border-radius: 50%;
-	background-color: #8196ad;
-	top: -20%;
-	left: 50%;
-	transform: translateX(-50%);
+#photo-cards {
+	bottom: 50px;
+	transform: rotateX(90deg);
 	overflow: hidden;
+	border: 1px solid white;
 }
-.profile {
+.photo-frame {
+	width: 200px;
+	height: 250px;
+	padding: 1rem;
+	background-color: #fff;
+}
+.photo-frame-image {
 	width: 100%;
-	height: 100%;
-	border-radius: 50%;
-	background: url('/src/images/profile.png');
-	background-size: cover;
+	height: 85%;
+	margin-bottom: 0.5rem;
+}
+.photo-frame-text {
+	font-size: 1rem;
+	color: black;
+}
+.frame-1 {
+	transform: rotate(-15deg);
+	top: 0px;
+	left: 20px;
+}
+.frame-1 .photo-frame-image {
+	background: url('/src/images/cards/card-1.jpg');
 	background-repeat: no-repeat;
-	background-position: top;
+	background-size: cover;
+	background-position: bottom;
 }
-.intro-text {
-	position: relative;
-	height: 20rem;
-	font-size: 10rem;
-	font-family: 'Knight Vision', sans-serif;
+.frame-2 {
+	top: 0;
+	right: -10px;
+	transform: rotate(15deg);
 }
-.intro-text h1 {
-	bottom: 0;
-	width: 100%;
+.frame-2 .photo-frame-image {
+	background: url('/src/images/cards/card-2.jpg');
+	background-size: cover;
+	background-position: bottom;
 }
-.intro-text h1:last-child {
-	text-align: right;
+.frame-3 {
+	bottom: -15px;
+	right: 0px;
+	transform: rotate(-25deg);
+}
+.frame-3 .photo-frame-image {
+	background: url('/src/images/cards/card-3.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.frame-4 {
+	bottom: -15px;
+	left: 0px;
+	transform: rotate(20deg);
+}
+.frame-4 .photo-frame-image {
+	background: url('/src/images/cards/card-4.jpg');
+	background-size: cover;
+	background-position: center;
 }
