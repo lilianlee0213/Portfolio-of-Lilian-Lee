@@ -3,42 +3,19 @@ import './style.css';
 import {motion, useScroll, useTransform} from 'framer-motion';
 export default function Home() {
 	const cubeRef = useRef(null);
-	const [isMoving, setIsMoving] = useState(false);
-	const [mousePosition, setMousePosition] = useState({x: 0, y: 0});
-	const handleMouseDown = (event) => {
-		setIsMoving(true);
-		setMousePosition({x: event.clientX, y: event.clientY});
-	};
-	const handleMouseMove = (event) => {
-		const rotateX = event.clientX - mousePosition.x / 4;
-		const rotateY = event.clientY - mousePosition.y / 4;
-		if (!isMoving) return;
-		cubeRef.current.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-		setMousePosition({x: event.clientX, y: event.clientY});
-	};
-	const handleMouseUp = () => {
-		setIsMoving(false);
-	};
+	const targetRef = useRef(null);
+	const {scrollYProgress} = useScroll({
+		target: targetRef,
+		offset: ['start end', 'end start'],
+	});
+	const openBox = useTransform(scrollYProgress, [0, 0.3], [-500, 400]);
 
-	// const targetRef = useRef(null);
-	// const {scrollYProgress} = useScroll({
-	// 	target: targetRef,
-	// 	offset: ['start end', 'end start'],
-	// });
-	// const y = useTransform(scrollYProgress, [0, 0.2], [220, 0]);
-	// const textToRight = useTransform(scrollYProgress, [0, 0.4], [-500, 30]);
-	// const textToLeft = useTransform(scrollYProgress, [0, 0.4], [500, -60]);
 	return (
 		<div className="section-wrapper">
-			<section id="home" className="section section-1">
-				<div className="h-100 ff-main section-1-container">
-					<div className="absolute cube-container">
-						<div
-							ref={cubeRef}
-							className="cube"
-							onMouseDown={handleMouseDown}
-							onMouseMove={handleMouseMove}
-							onMouseUp={handleMouseUp}>
+			<section id="home" className="section section-1" ref={targetRef}>
+				<div className=" h-100 ff-main section-1-container">
+					<div className="sticky cube-container">
+						<div ref={cubeRef} className="cube">
 							<div id="front" className="card">
 								Front
 							</div>
@@ -51,9 +28,9 @@ export default function Home() {
 							<div id="right" className="card">
 								Right
 							</div>
-							<div id="top" className="card">
+							<motion.div style={{left: openBox}} id="top" className="card">
 								Top
-							</div>
+							</motion.div>
 							<div id="bottom" className="card">
 								Bottom
 							</div>

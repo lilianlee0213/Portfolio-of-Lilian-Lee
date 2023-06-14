@@ -1,11 +1,11 @@
 .section-1 {
-	background-color: white;
+	height: 500vh;
 }
 .cube-container {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 30%;
 	perspective: 10000px;
 }
 .cube {
@@ -45,10 +45,18 @@
 	transform: rotateX(90deg);
 }
 #bottom {
-	background-color: var(--blue);
-
-	transform: rotateX(-90deg);
 	top: 200px;
+	background-color: var(--blue);
+	transform: rotateX(-90deg);
+}
+.section-1-text {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.section-1-text h1 {
+	font-size: 18vw;
+	letter-spacing: -30px;
 }
 .circle {
 	width: 400px;
