@@ -12,7 +12,7 @@
 	width: 400px;
 	height: 400px;
 	transform-style: preserve-3d;
-	transform: rotateX(-50deg) rotateY(50deg);
+	transform: rotateX(0) rotateY(0deg);
 }
 .card {
 	position: absolute;
@@ -51,7 +51,7 @@
 }
 #photo-cards {
 	bottom: 50px;
-	transform: rotateX(90deg);
+	/* transform: rotate(-90deg); */
 	overflow: hidden;
 	border: 1px solid white;
 }
