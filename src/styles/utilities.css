@@ -4,6 +4,13 @@
 :root {
 	--ff-main: 'Noto Sans Masaram Gondi', sans-serif;
 	--ff-second: 'GROUPE', sans-serif;
+	--white: #ffffff;
+	--lightYellow: #f8f4ab;
+	--yellow: #f4ea88;
+	--lightGreen: #a8db98;
+	--green: #a1d9cc;
+	--blue: #8cbcea;
+	--purple: #9b97d2;
 }
 
 /* font-family */

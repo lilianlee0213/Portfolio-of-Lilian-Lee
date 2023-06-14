@@ -1,3 +1,6 @@
+.section-1 {
+	background-color: white;
+}
 .cube-container {
 	position: absolute;
 	top: 50%;
@@ -9,6 +12,7 @@
 	width: 400px;
 	height: 400px;
 	transform-style: preserve-3d;
+	transform: rotateX(-50deg) rotateY(50deg);
 }
 .card {
 	position: absolute;
@@ -18,30 +22,31 @@
 	padding: 100px 0;
 }
 #front {
-	background-color: red;
+	background-color: var(--lightYellow);
 	transform: translateZ(200px);
 }
 #back {
-	background-color: orange;
+	background-color: var(--yellow);
 	transform: translateZ(-200px);
 }
 #left {
-	background-color: yellow;
-	transform: rotateY(90deg);
 	right: 200px;
+	background-color: var(--lightGreen);
+	transform: rotateY(90deg);
 }
 #right {
-	background-color: green;
-	transform: rotateY(-90deg);
 	left: 200px;
+	background-color: var(--purple);
+	transform: rotateY(-90deg);
 }
 #top {
-	background-color: blue;
-	transform: rotateX(90deg);
 	bottom: 200px;
+	background-color: var(--green);
+	transform: rotateX(90deg);
 }
 #bottom {
-	background-color: violet;
+	background-color: var(--blue);
+
 	transform: rotateX(-90deg);
 	top: 200px;
 }

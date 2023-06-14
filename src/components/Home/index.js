@@ -12,10 +12,9 @@ export default function Home() {
 	const handleMouseMove = (event) => {
 		const rotateX = event.clientX - mousePosition.x / 4;
 		const rotateY = event.clientY - mousePosition.y / 4;
-		if (isMoving) {
-			cubeRef.current.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
-			setMousePosition({x: event.clientX, y: event.clientY});
-		} else return;
+		if (!isMoving) return;
+		cubeRef.current.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+		setMousePosition({x: event.clientX, y: event.clientY});
 	};
 	const handleMouseUp = () => {
 		setIsMoving(false);
@@ -34,17 +33,9 @@ export default function Home() {
 			<section id="home" className="section section-1">
 				<div className="h-100 ff-main section-1-container">
 					<div className="absolute cube-container">
-						<motion.div
+						<div
 							ref={cubeRef}
 							className="cube"
-							initial={{rotateX: 0, rotateY: 0}}
-							animate={{
-								rotateX: -20,
-								rotateY: 25,
-								transition: {
-									duration: 1,
-								},
-							}}
 							onMouseDown={handleMouseDown}
 							onMouseMove={handleMouseMove}
 							onMouseUp={handleMouseUp}>
@@ -66,7 +57,7 @@ export default function Home() {
 							<div id="bottom" className="card">
 								Bottom
 							</div>
-						</motion.div>
+						</div>
 					</div>
 				</div>
 			</section>
