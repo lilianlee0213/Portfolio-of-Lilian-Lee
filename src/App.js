@@ -1,5 +1,5 @@
 import './styles/reset.css';
-import './styles/globalStyles.css';
+import './styles/utilities.css';
 import Header from './components/Header';
 import Home from './components/Home';
 import Work from './components/Work';

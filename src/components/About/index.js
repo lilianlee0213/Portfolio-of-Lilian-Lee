@@ -1,4 +1,4 @@
 import './style.css';
 export default function About() {
-	return <div>About</div>;
+	return <section className="section section-about">About</section>;
 }

@@ -1,4 +1,4 @@
 import './style.css';
 export default function Work() {
-	return <div>Work</div>;
+	return <section className="section section-work">Work</section>;
 }

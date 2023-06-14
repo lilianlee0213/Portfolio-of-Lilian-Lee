@@ -1,4 +1,4 @@
 import './style.css';
 export default function Home() {
-	return <div>Home</div>;
+	return <section className="section section-home">Home</section>;
 }
