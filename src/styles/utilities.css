@@ -1,17 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap');
 
 :root {
-	--ff-main: 'Space Grotesk', sans-serif;
+	--ff-main: 'Bona Nova', serif;
+	--ff-second: 'Space Grotesk', sans-serif;
 	--ff-logo: 'Cedarville Cursive', cursive;
 }
+
 /* font-family */
 .ff-main {
 	font-family: var(--ff-main);
 }
+
 .ff-logo {
 	font-family: var(--ff-logo);
 	letter-spacing: 1px;
 }
+
+/* font-weight */
+.fw-300 {
+	font-weight: 300;
+}
+.fw-400 {
+	font-weight: 400;
+}
+.fw-500 {
+	font-weight: 500;
+}
+.fw-600 {
+	font-weight: 600;
+}
+.fw-700 {
+	font-weight: 700;
+}
+
 /*************** POSITION **************/
 .relative {
 	position: relative;
@@ -86,9 +108,9 @@ body {
 	width: 100vw;
 	background-color: black;
 	color: white;
+	font-family: var(--ff-main);
 }
 .section {
 	height: 100vh;
-	padding: 1rem;
 	border: 1px solid white;
 }
