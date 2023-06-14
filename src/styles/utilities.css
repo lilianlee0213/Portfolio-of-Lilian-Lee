@@ -1,17 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.cdnfonts.com/css/noto-sans-masaram-gondi');
+@import url('https://fonts.cdnfonts.com/css/groupe');
 
 :root {
-	--ff-main: 'Bona Nova', serif;
-	--ff-second: 'Space Grotesk', sans-serif;
-	--ff-logo: 'Cedarville Cursive', cursive;
+	--ff-main: 'Noto Sans Masaram Gondi', sans-serif;
+	--ff-second: 'GROUPE', sans-serif;
 }
 
 /* font-family */
 .ff-main {
 	font-family: var(--ff-main);
 }
-
+.ff-second {
+	font-family: var(--ff-second);
+}
 .ff-logo {
 	font-family: var(--ff-logo);
 	letter-spacing: 1px;
@@ -109,8 +110,10 @@ body {
 	background-color: black;
 	color: white;
 	font-family: var(--ff-main);
+	overflow-x: hidden;
 }
 .section {
 	height: 100vh;
 	border: 1px solid white;
+	padding-inline: 5rem;
 }
