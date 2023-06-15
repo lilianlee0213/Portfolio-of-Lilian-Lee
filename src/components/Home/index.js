@@ -59,15 +59,45 @@ export default function Home() {
 							</motion.div>
 						</motion.div>
 					</motion.div>
-					<div className="absolute w-100 text-marquee">
-						<div className="flex marquee">
-							<p>Creative & Curious</p>
-							<p>Creative & Curious</p>
-							<p>Creative & Curious</p>
-							<p>Creative & Curious</p>
-							<p>Creative & Curious</p>
-							<p>Creative & Curious</p>
-						</div>
+					<div className="absolute w-100 marquee">
+						<motion.div
+							className="marquee-slide"
+							animate={{
+								x: '-100%',
+								transition: {duration: 10, ease: 'linear', repeat: Infinity},
+							}}>
+							<span className="marquee-text">
+								I think creative & I build them
+							</span>
+							<span className="marquee-text">
+								I think creative & I build them
+							</span>
+							<span className="marquee-text">
+								I think creative & I build them
+							</span>
+							<span className="marquee-text">
+								I think creative & I build them
+							</span>
+						</motion.div>
+						<motion.div
+							className="marquee-slide"
+							animate={{
+								x: '-100%',
+								transition: {duration: 10, ease: 'linear', repeat: Infinity},
+							}}>
+							<span className="marquee-text">
+								I think creative & I build them
+							</span>
+							<span className="marquee-text">
+								I think creative & I build them
+							</span>
+							<span className="marquee-text">
+								I think creative & I build them
+							</span>
+							<span className="marquee-text">
+								I think creative & I build them
+							</span>
+						</motion.div>
 					</div>
 					<motion.div
 						ref={titleRef}

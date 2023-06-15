@@ -81,22 +81,24 @@
 	color: black;
 }
 /******* marquee *******/
-.text-marquee {
-	font-size: 1.5vw;
-	top: 0%;
-	background-color: palegreen;
-	padding: 0.5rem 0;
+.marquee {
+	top: 0;
+	padding: 0.4rem;
+	white-space: nowrap;
 	color: #000;
+	background-color: palegreen;
 	z-index: -1;
 }
-.marquee {
-	overflow: hidden;
+.marquee-slide {
+	display: inline-block;
 }
-.marquee p {
-	white-space: nowrap;
+.marquee-text {
+	display: inline-block;
 	padding: 0 2rem;
-	letter-spacing: 0.05px;
+	font-size: 1.8vw;
+	text-transform: uppercase;
 }
+
 /******* title *******/
 .text-title {
 	width: 100%;
