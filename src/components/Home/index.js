@@ -10,8 +10,8 @@ import {
 } from 'framer-motion';
 export default function Home() {
 	const targetRef = useRef(null);
-	const titleRef = useRef(null);
-	const isInView = useInView(titleRef, {once: true});
+	const inViewRef = useRef(null);
+	const isInView = useInView(inViewRef, {once: true});
 	const {scrollYProgress} = useScroll({
 		target: targetRef,
 		offset: ['start end', 'end start'],
@@ -59,53 +59,59 @@ export default function Home() {
 							</motion.div>
 						</motion.div>
 					</motion.div>
-					<div className="absolute w-100 marquee">
-						<motion.div
-							className="marquee-slide"
-							animate={{
-								x: '-100%',
-								transition: {duration: 10, ease: 'linear', repeat: Infinity},
-							}}>
-							<span className="marquee-text">
-								I think creative & I build them
-							</span>
-							<span className="marquee-text">
-								I think creative & I build them
-							</span>
-							<span className="marquee-text">
-								I think creative & I build them
-							</span>
-							<span className="marquee-text">
-								I think creative & I build them
-							</span>
-						</motion.div>
-						<motion.div
-							className="marquee-slide"
-							animate={{
-								x: '-100%',
-								transition: {duration: 10, ease: 'linear', repeat: Infinity},
-							}}>
-							<span className="marquee-text">
-								I think creative & I build them
-							</span>
-							<span className="marquee-text">
-								I think creative & I build them
-							</span>
-							<span className="marquee-text">
-								I think creative & I build them
-							</span>
-							<span className="marquee-text">
-								I think creative & I build them
-							</span>
-						</motion.div>
-					</div>
 					<motion.div
-						ref={titleRef}
+						ref={inViewRef}
+						className="absolute w-100 marquee"
+						style={{
+							opacity: isInView ? 1 : 0,
+							transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s',
+						}}>
+						<motion.div
+							className="marquee-slide"
+							animate={{
+								x: '-100%',
+								transition: {duration: 10, ease: 'linear', repeat: Infinity},
+							}}>
+							<span className="marquee-text">
+								I think creative & I build them
+							</span>
+							<span className="marquee-text">
+								I think creative & I build them
+							</span>
+							<span className="marquee-text">
+								I think creative & I build them
+							</span>
+							<span className="marquee-text">
+								I think creative & I build them
+							</span>
+						</motion.div>
+						<motion.div
+							className="marquee-slide"
+							animate={{
+								x: '-100%',
+								transition: {duration: 10, ease: 'linear', repeat: Infinity},
+							}}>
+							<span className="marquee-text">
+								I think creative & I build them
+							</span>
+							<span className="marquee-text">
+								I think creative & I build them
+							</span>
+							<span className="marquee-text">
+								I think creative & I build them
+							</span>
+							<span className="marquee-text">
+								I think creative & I build them
+							</span>
+						</motion.div>
+					</motion.div>
+					<motion.div
+						ref={inViewRef}
 						className="absolute text-title"
 						style={{
 							transform: isInView ? 'none' : 'translateX(-200px)',
 							opacity: isInView ? 1 : 0,
-							transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s',
+							transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.6s',
 						}}>
 						<h1 className="ff-main fw-700 uppercase">
 							Front
