@@ -1,6 +1,7 @@
 import {useEffect, useRef, useState} from 'react';
 import './style.css';
 import {
+	clamp,
 	motion,
 	useMotionValueEvent,
 	useScroll,
@@ -14,12 +15,14 @@ export default function Home() {
 		target: targetRef,
 		offset: ['start end', 'end start'],
 	});
-	const rotateXBox = useTransform(scrollYProgress, [0, 0.2], [0, -45]);
-	const rotateYBox = useTransform(scrollYProgress, [0, 0.2], [0, -45]);
-	const openBox = useTransform(scrollYProgress, [0.2, 0.3], [0, 400]);
-	const frameOut = useTransform(scrollYProgress, [0.3, 0.4], [-150, 400]);
-	const frameRotateX = useTransform(scrollYProgress, [0.4, 0.5], [90, 45]);
-	const frameRotateY = useTransform(scrollYProgress, [0.4, 0.5], [0, 50]);
+	const rotateXBox = useTransform(scrollYProgress, [0, 0.3], [-20, -410]);
+	const rotateYBox = useTransform(scrollYProgress, [0, 0.3], [70, -410]);
+	const openBox = useTransform(scrollYProgress, [0.3, 0.35], [0, 300]);
+	const cardY = useTransform(scrollYProgress, [0.35, 0.4], [70, -350]);
+	// const cardScale = useTransform(scrollYProgress, [0.35, 0.45], [1, 2]);
+	// const frameOut = useTransform(scrollYProgress, [0.3, 0.4], [-150, 400]);
+	// const frameRotateX = useTransform(scrollYProgress, [0.4, 0.5], [90, 45]);
+	// const frameRotateY = useTransform(scrollYProgress, [0.4, 0.5], [0, 50]);
 	useMotionValueEvent(scrollYProgress, 'change', (latest) => {
 		if (latest > 0.365) {
 			setIsOverflowHidden(true);
@@ -55,6 +58,13 @@ export default function Home() {
 								Bottom
 							</div>
 							<motion.div
+								id="profile"
+								className="profile-card"
+								style={{top: cardY}}>
+								<div className="photo-frame-image"></div>
+								<div className="photo-frame-text">My Card1</div>
+							</motion.div>
+							{/* <motion.div
 								id="photo-cards"
 								className="card"
 								style={{
@@ -80,7 +90,7 @@ export default function Home() {
 									<div className="photo-frame-image"></div>
 									<div className="photo-frame-text">My Card4</div>
 								</motion.div>
-							</motion.div>
+							</motion.div> */}
 						</motion.div>
 					</div>
 				</div>

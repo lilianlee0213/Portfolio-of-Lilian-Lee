@@ -1,5 +1,5 @@
 .section-1 {
-	height: 500vh;
+	height: 1000vh;
 }
 .cube-container {
 	display: flex;
@@ -8,47 +8,68 @@
 	top: 40%;
 	perspective: 10000px;
 }
+
 .cube {
-	width: 400px;
-	height: 400px;
+	width: 300px;
+	height: 300px;
 	transform-style: preserve-3d;
-	transform: rotateX(0) rotateY(0deg);
 }
 .card {
 	position: absolute;
-	width: 400px;
-	height: 400px;
+	width: 300px;
+	height: 300px;
 	text-align: center;
 	padding: 100px 0;
 }
+
+.profile-card {
+	position: absolute;
+	width: 180px;
+	height: 220px;
+	background-color: #fff;
+	padding: 1rem;
+	text-align: center;
+}
 #front {
 	background-color: var(--lightYellow);
-	transform: translateZ(200px);
+	transform: translateZ(150px);
 }
 #back {
 	background-color: var(--yellow);
-	transform: translateZ(-200px);
+	transform: translateZ(-150px);
 }
 #left {
-	right: 200px;
+	right: 150px;
 	background-color: var(--lightGreen);
 	transform: rotateY(90deg);
 }
 #right {
-	left: 200px;
+	left: 150px;
 	background-color: var(--purple);
 	transform: rotateY(-90deg);
 }
 #top {
-	bottom: 200px;
+	bottom: 150px;
 	background-color: var(--green);
 	transform: rotateX(90deg);
 }
 #bottom {
-	top: 200px;
+	top: 150px;
 	background-color: var(--blue);
 	transform: rotateX(-90deg);
 }
+#profile {
+	top: 70px;
+	left: 50px;
+	right: 200px;
+	transform: rotateY(45deg) rotateX(50deg) rotateX(-10deg) translateZ(60px);
+}
+#profile .photo-frame-image {
+	background: url('/src/images/cards/card-4.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
 #photo-cards {
 	bottom: 50px;
 	/* overflow: hidden; */
