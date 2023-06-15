@@ -1,22 +1,32 @@
-import {useRef, useState} from 'react';
+import {useEffect, useRef, useState} from 'react';
 import './style.css';
-import {motion, useScroll, useTransform} from 'framer-motion';
+import {
+	motion,
+	useMotionValueEvent,
+	useScroll,
+	useTransform,
+} from 'framer-motion';
 export default function Home() {
+	const [isOverflowHidden, setIsOverflowHidden] = useState(false);
 	const cubeRef = useRef(null);
 	const targetRef = useRef(null);
 	const {scrollYProgress} = useScroll({
 		target: targetRef,
 		offset: ['start end', 'end start'],
 	});
-	// transform: rotateX(-50deg) rotateY(50deg);
-
 	const rotateXBox = useTransform(scrollYProgress, [0, 0.2], [0, -45]);
 	const rotateYBox = useTransform(scrollYProgress, [0, 0.2], [0, -45]);
-	const openBox = useTransform(scrollYProgress, [0.2, 0.4], [0, 400]);
-	const frameOut = useTransform(scrollYProgress, [0.4, 0.5], [-150, 300]);
-	const frameRotateX = useTransform(scrollYProgress, [0.5, 0.7], [90, 45]);
-	const frameRotateY = useTransform(scrollYProgress, [0.5, 0.7], [0, 55]);
-
+	const openBox = useTransform(scrollYProgress, [0.2, 0.3], [0, 400]);
+	const frameOut = useTransform(scrollYProgress, [0.3, 0.4], [-150, 400]);
+	const frameRotateX = useTransform(scrollYProgress, [0.4, 0.5], [90, 45]);
+	const frameRotateY = useTransform(scrollYProgress, [0.4, 0.5], [0, 50]);
+	useMotionValueEvent(scrollYProgress, 'change', (latest) => {
+		if (latest > 0.365) {
+			setIsOverflowHidden(true);
+		} else {
+			setIsOverflowHidden(false);
+		}
+	});
 	return (
 		<div className="section-wrapper">
 			<section id="home" className="section section-1" ref={targetRef}>
@@ -51,6 +61,7 @@ export default function Home() {
 									bottom: frameOut,
 									rotateX: frameRotateX,
 									rotateY: frameRotateY,
+									overflow: isOverflowHidden ? 'inherit' : 'hidden',
 								}}>
 								<motion.div className="absolute photo-frame frame-1">
 									<div className="photo-frame-image"></div>

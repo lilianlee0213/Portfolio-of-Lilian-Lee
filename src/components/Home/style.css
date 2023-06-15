@@ -5,7 +5,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	top: 30%;
+	top: 40%;
 	perspective: 10000px;
 }
 .cube {
@@ -51,9 +51,7 @@
 }
 #photo-cards {
 	bottom: 50px;
-	/* transform: rotate(-90deg); */
-	overflow: hidden;
-	border: 1px solid white;
+	/* overflow: hidden; */
 }
 .photo-frame {
 	width: 200px;
