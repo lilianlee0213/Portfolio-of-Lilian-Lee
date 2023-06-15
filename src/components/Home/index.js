@@ -15,14 +15,11 @@ export default function Home() {
 		target: targetRef,
 		offset: ['start end', 'end start'],
 	});
-	const rotateXBox = useTransform(scrollYProgress, [0, 0.3], [-20, -410]);
-	const rotateYBox = useTransform(scrollYProgress, [0, 0.3], [70, -410]);
+	const rotateXBox = useTransform(scrollYProgress, [0, 0.3], [140, -410]);
+	const rotateYBox = useTransform(scrollYProgress, [0, 0.3], [140, -410]);
 	const openBox = useTransform(scrollYProgress, [0.3, 0.35], [0, 300]);
 	const cardY = useTransform(scrollYProgress, [0.35, 0.4], [70, -350]);
-	// const cardScale = useTransform(scrollYProgress, [0.35, 0.45], [1, 2]);
-	// const frameOut = useTransform(scrollYProgress, [0.3, 0.4], [-150, 400]);
-	// const frameRotateX = useTransform(scrollYProgress, [0.4, 0.5], [90, 45]);
-	// const frameRotateY = useTransform(scrollYProgress, [0.4, 0.5], [0, 50]);
+
 	useMotionValueEvent(scrollYProgress, 'change', (latest) => {
 		if (latest > 0.365) {
 			setIsOverflowHidden(true);
@@ -33,8 +30,8 @@ export default function Home() {
 	return (
 		<div className="section-wrapper">
 			<section id="home" className="section section-1" ref={targetRef}>
-				<div className=" h-100 ff-main section-1-container">
-					<div className="sticky cube-container">
+				<div className="sticky ff-main hero">
+					<div className="flex justify-center align-center cube-container">
 						<motion.div
 							ref={cubeRef}
 							className="cube"
@@ -92,6 +89,25 @@ export default function Home() {
 								</motion.div>
 							</motion.div> */}
 						</motion.div>
+					</div>
+					<div className="absolute w-100 text-marquee">
+						<div className="flex marquee">
+							<p>Creative & Curious</p>
+							<p>Creative & Curious</p>
+							<p>Creative & Curious</p>
+							<p>Creative & Curious</p>
+							<p>Creative & Curious</p>
+							<p>Creative & Curious</p>
+						</div>
+					</div>
+					<div className="absolute text-title">
+						<h1 className="ff-main fw-700 uppercase">
+							Front
+							<br />
+							-end
+							<br />
+							developer
+						</h1>
 					</div>
 				</div>
 			</section>

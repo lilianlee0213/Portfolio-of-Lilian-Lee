@@ -1,8 +1,9 @@
 @import url('https://fonts.cdnfonts.com/css/noto-sans-masaram-gondi');
 @import url('https://fonts.cdnfonts.com/css/groupe');
+@import url('https://fonts.cdnfonts.com/css/poppins');
 
 :root {
-	--ff-main: 'Noto Sans Masaram Gondi', sans-serif;
+	--ff-main: 'Poppins', sans-serif;
 	--ff-second: 'GROUPE', sans-serif;
 	--white: #ffffff;
 	--lightYellow: #f8f4ab;
