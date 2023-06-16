@@ -77,6 +77,7 @@ export default function Home() {
 	const openBox = useTransform(scrollYProgress, [0.4, 0.5], [0, 300]);
 	const cardY = useTransform(scrollYProgress, [0.5, 0.6], [70, -150]);
 	const opacity = useTransform(scrollYProgress, [0.95, 1], [1, 0]);
+	const textOpacity = useTransform(scrollYProgress, [0.3, 0.4], [1, 0]);
 	useMotionValueEvent(scrollYProgress, 'change', (latest) => {
 		if (latest >= 0.6) {
 			setCardOut(true);
@@ -90,7 +91,9 @@ export default function Home() {
 		<div className="section-wrapper">
 			<div id="home" className="section hero" ref={targetRef}>
 				<motion.div className="sticky sticky-hero" style={{opacity}}>
-					<motion.div className="absolute w-100 fw-600 uppercase text-center hero-text">
+					<motion.div
+						className="absolute w-100 fw-600 uppercase text-center hero-text"
+						style={{opacity: textOpacity}}>
 						<Text text="Hi, I'm Lilian."></Text>
 						<Text text="I'm a Front-end"></Text>
 						<Text text="Developer."></Text>
