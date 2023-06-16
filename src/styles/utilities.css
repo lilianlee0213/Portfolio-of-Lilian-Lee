@@ -127,3 +127,6 @@ body {
 	height: 100vh;
 	border: 1px solid white;
 }
+span.letter {
+	display: inline-block;
+}

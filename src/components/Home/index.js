@@ -1,13 +1,58 @@
 import {useEffect, useRef, useState} from 'react';
 import './style.css';
 import {
+	animate,
 	motion,
 	useInView,
 	useMotionValueEvent,
 	useScroll,
 	useTransform,
 } from 'framer-motion';
-const marqueeSlide = () => {
+const textReveal = {
+	animate: {
+		transition: {
+			delayChildren: 0.2,
+			staggerChildren: 0.1,
+		},
+	},
+};
+const letterAnimation = {
+	initial: {
+		opacity: 0,
+		y: 30,
+	},
+	animate: {
+		opacity: 1,
+		y: 0,
+		transition: {
+			duration: 0.3,
+		},
+	},
+};
+
+const Letters = ({text}) => {
+	return (
+		<motion.span
+			variants={textReveal}
+			initial="initial"
+			animate="animate"
+			style={{overflow: 'hidden'}}>
+			{[...text].map((letter) => (
+				<motion.span className="letter" variants={letterAnimation}>
+					{letter === ' ' ? '\u00A0' : letter}
+				</motion.span>
+			))}
+		</motion.span>
+	);
+};
+const Text = ({text}) => {
+	return (
+		<motion.div variants={textReveal}>
+			<Letters text={text} />
+		</motion.div>
+	);
+};
+const MarqueeSlide = () => {
 	return (
 		<motion.div className="marquee-slide">
 			<span className="marquee-text">I think creative &amp; I build them</span>
@@ -45,13 +90,11 @@ export default function Home() {
 		<div className="section-wrapper">
 			<div id="home" className="section hero" ref={targetRef}>
 				<motion.div className="sticky sticky-hero" style={{opacity}}>
-					<div className="absolute w-100 fw-600 uppercase text-center hero-text">
-						<h1>Hi, I'm Lilian.</h1>
-						<h2>
-							I'm a Front-end <br />
-							Web Developer.
-						</h2>
-					</div>
+					<motion.div className="absolute w-100 fw-600 uppercase text-center hero-text">
+						<Text text="Hi, I'm Lilian."></Text>
+						<Text text="I'm a Front-end"></Text>
+						<Text text="Developer."></Text>
+					</motion.div>
 					<motion.div
 						ref={inViewRef}
 						className="absolute w-100 marquee-container marquee-1"
@@ -60,8 +103,8 @@ export default function Home() {
 							transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s',
 						}}>
 						<>
-							{marqueeSlide()}
-							{marqueeSlide()}
+							{MarqueeSlide()}
+							{MarqueeSlide()}
 						</>
 					</motion.div>
 					<motion.div
@@ -72,8 +115,8 @@ export default function Home() {
 							transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s',
 						}}>
 						<>
-							{marqueeSlide()}
-							{marqueeSlide()}
+							{MarqueeSlide()}
+							{MarqueeSlide()}
 						</>
 					</motion.div>
 					<motion.div
@@ -127,7 +170,7 @@ export default function Home() {
 									delay: 0.3,
 								},
 							}}>
-							Hi, It's me, Lilian!
+							This is me, Lilian!
 						</motion.p>
 					</motion.div>
 				</motion.div>
