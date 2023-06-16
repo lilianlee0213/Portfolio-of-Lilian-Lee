@@ -5,6 +5,13 @@
 	top: 0;
 	height: 100vh;
 }
+.page-2 {
+	height: 200vh;
+}
+.sticky-page-2 {
+	top: 0;
+	height: 100vh;
+}
 /******* title *******/
 .hero-text {
 	font-size: 8vw;
