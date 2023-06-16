@@ -7,6 +7,16 @@ import {
 	useScroll,
 	useTransform,
 } from 'framer-motion';
+const marqueeSlide = () => {
+	return (
+		<motion.div className="marquee-slide">
+			<span className="marquee-text">I think creative &amp; I build them</span>
+			<span className="marquee-text">I think creative &amp; I build them</span>
+			<span className="marquee-text">I think creative &amp; I build them</span>
+			<span className="marquee-text">I think creative &amp; I build them</span>
+		</motion.div>
+	);
+};
 export default function Home() {
 	const [isCardOut, setCardOut] = useState(false);
 	const targetRef = useRef(null);
@@ -16,26 +26,58 @@ export default function Home() {
 		target: targetRef,
 		offset: ['start end', 'end start'],
 	});
-	const upboxY = useTransform(scrollYProgress, [0.1, 0.3], ['500%', '0%']);
-	const rotateXBox = useTransform(scrollYProgress, [0.25, 0.5], [140, -50]);
-	const rotateYBox = useTransform(scrollYProgress, [0.25, 0.5], [140, -50]);
-	const openBox = useTransform(scrollYProgress, [0.5, 0.6], [0, 300]);
-	const cardY = useTransform(scrollYProgress, [0.6, 0.8], [70, -200]);
+	const upboxY = useTransform(scrollYProgress, [0.1, 0.4], ['600%', '100%']);
+	const rotateXBox = useTransform(scrollYProgress, [0.3, 0.4], [140, -50]);
+	const rotateYBox = useTransform(scrollYProgress, [0.3, 0.4], [140, -50]);
+	const openBox = useTransform(scrollYProgress, [0.4, 0.5], [0, 300]);
+	const cardY = useTransform(scrollYProgress, [0.5, 0.6], [70, -150]);
 	const opacity = useTransform(scrollYProgress, [0.95, 1], [1, 0]);
 	useMotionValueEvent(scrollYProgress, 'change', (latest) => {
-		if (latest >= 0.8) {
+		if (latest >= 0.6) {
 			setCardOut(true);
 		} else {
 			setCardOut(false);
 		}
 		console.log(latest);
 	});
+
 	return (
 		<div className="section-wrapper">
-			<section id="home" className="section section-1" ref={targetRef}>
-				<motion.div className="sticky ff-main hero" style={{opacity}}>
+			<div id="home" className="section hero" ref={targetRef}>
+				<motion.div className="sticky sticky-hero" style={{opacity}}>
+					<div className="absolute w-100 fw-600 uppercase text-center hero-text">
+						<h1>Hi, I'm Lilian.</h1>
+						<h2>
+							I'm a Front-end <br />
+							Web Developer.
+						</h2>
+					</div>
 					<motion.div
-						className="flex justify-center align-center cube-container"
+						ref={inViewRef}
+						className="absolute w-100 marquee-container marquee-1"
+						style={{
+							opacity: isInView ? 1 : 0,
+							transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s',
+						}}>
+						<>
+							{marqueeSlide()}
+							{marqueeSlide()}
+						</>
+					</motion.div>
+					<motion.div
+						ref={inViewRef}
+						className="absolute w-100 marquee-container marquee-2"
+						style={{
+							opacity: isInView ? 1 : 0,
+							transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s',
+						}}>
+						<>
+							{marqueeSlide()}
+							{marqueeSlide()}
+						</>
+					</motion.div>
+					<motion.div
+						className="flex justify-center cube-container"
 						style={{y: upboxY}}>
 						<motion.div
 							className="cube"
@@ -67,71 +109,9 @@ export default function Home() {
 							</motion.div>
 						</motion.div>
 					</motion.div>
-					<motion.div
-						ref={inViewRef}
-						className="absolute w-100 marquee-container"
-						style={{
-							opacity: isInView ? 1 : 0,
-							transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s',
-						}}>
-						<motion.div
-							className="marquee-slide"
-							animate={{
-								x: '-100%',
-								transition: {duration: 5, ease: 'linear', repeat: Infinity},
-							}}>
-							<span className="marquee-text">
-								I think creative & I build them
-							</span>
-							<span className="marquee-text">
-								I think creative & I build them
-							</span>
-							<span className="marquee-text">
-								I think creative & I build them
-							</span>
-							<span className="marquee-text">
-								I think creative & I build them
-							</span>
-						</motion.div>
-						<motion.div
-							className="marquee-slide"
-							animate={{
-								x: '-100%',
-								transition: {duration: 5, ease: 'linear', repeat: Infinity},
-							}}>
-							<span className="marquee-text">
-								I think creative & I build them
-							</span>
-							<span className="marquee-text">
-								I think creative & I build them
-							</span>
-							<span className="marquee-text">
-								I think creative & I build them
-							</span>
-							<span className="marquee-text">
-								I think creative & I build them
-							</span>
-						</motion.div>
-					</motion.div>
-					<motion.div
-						ref={inViewRef}
-						className="absolute title-container"
-						style={{
-							transform: isInView ? 'none' : 'translateX(-200px) ',
-							opacity: isInView ? 1 : 0,
-							transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.6s',
-						}}>
-						<motion.div className="ff-main fw-700 uppercase">
-							Front-
-							<br />
-							end
-							<br />
-							developer
-						</motion.div>
-					</motion.div>
-					<motion.div className="absolute text-container">
+					<motion.div className="absolute cube-text-container">
 						<motion.p
-							className="text"
+							className="cube-text"
 							initial={{opacity: 0}}
 							animate={{
 								rotate: isCardOut ? [7, 0, -7] : [],
@@ -151,7 +131,7 @@ export default function Home() {
 						</motion.p>
 					</motion.div>
 				</motion.div>
-			</section>
+			</div>
 		</div>
 	);
 }
