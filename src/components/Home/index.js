@@ -1,13 +1,6 @@
 import {useEffect, useRef, useState} from 'react';
 import './style.css';
-import {
-	clamp,
-	motion,
-	useInView,
-	useMotionValueEvent,
-	useScroll,
-	useTransform,
-} from 'framer-motion';
+import {motion, useInView, useScroll, useTransform} from 'framer-motion';
 export default function Home() {
 	const targetRef = useRef(null);
 	const inViewRef = useRef(null);
@@ -16,11 +9,11 @@ export default function Home() {
 		target: targetRef,
 		offset: ['start end', 'end start'],
 	});
-	const upboxY = useTransform(scrollYProgress, [0.25, 0.3], ['300%', '0%']);
-	const rotateXBox = useTransform(scrollYProgress, [0.3, 0.6], [140, -410]);
-	const rotateYBox = useTransform(scrollYProgress, [0.3, 0.6], [140, -410]);
-	const openBox = useTransform(scrollYProgress, [0.6, 0.65], [0, 300]);
-	const cardY = useTransform(scrollYProgress, [0.65, 0.7], [70, -350]);
+	const upboxY = useTransform(scrollYProgress, [0.1, 0.3], ['300%', '0%']);
+	const rotateXBox = useTransform(scrollYProgress, [0.25, 0.4], [140, -410]);
+	const rotateYBox = useTransform(scrollYProgress, [0.25, 0.4], [140, -410]);
+	const openBox = useTransform(scrollYProgress, [0.4, 0.5], [0, 300]);
+	const cardY = useTransform(scrollYProgress, [0.5, 0.55], [70, -350]);
 
 	return (
 		<div className="section-wrapper">
@@ -70,7 +63,7 @@ export default function Home() {
 							className="marquee-slide"
 							animate={{
 								x: '-100%',
-								transition: {duration: 10, ease: 'linear', repeat: Infinity},
+								transition: {duration: 5, ease: 'linear', repeat: Infinity},
 							}}>
 							<span className="marquee-text">
 								I think creative & I build them
@@ -89,7 +82,7 @@ export default function Home() {
 							className="marquee-slide"
 							animate={{
 								x: '-100%',
-								transition: {duration: 10, ease: 'linear', repeat: Infinity},
+								transition: {duration: 5, ease: 'linear', repeat: Infinity},
 							}}>
 							<span className="marquee-text">
 								I think creative & I build them
@@ -114,9 +107,9 @@ export default function Home() {
 							transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.6s',
 						}}>
 						<h1 className="ff-main fw-700 uppercase">
-							Front
+							Front-
 							<br />
-							-end
+							end
 							<br />
 							developer
 						</h1>
