@@ -10,7 +10,7 @@ export default function Home() {
 		offset: ['start end', 'end start'],
 	});
 	const upboxY = useTransform(scrollYProgress, [0.1, 0.3], ['300%', '0%']);
-	const rotateXBox = useTransform(scrollYProgress, [0.25, 0.4], [140, -30]);
+	const rotateXBox = useTransform(scrollYProgress, [0.25, 0.4], [140, -50]);
 	const rotateYBox = useTransform(scrollYProgress, [0.25, 0.4], [140, -50]);
 	const openBox = useTransform(scrollYProgress, [0.4, 0.5], [0, 300]);
 	const cardY = useTransform(scrollYProgress, [0.5, 0.6], [70, -250]);
@@ -47,7 +47,7 @@ export default function Home() {
 								id="profile"
 								className="profile-card"
 								style={{top: cardY}}>
-								<div className="photo-frame-image"></div>
+								<motion.div className="photo-frame-image"></motion.div>
 								<div className="photo-frame-text">My Card1</div>
 							</motion.div>
 						</motion.div>
