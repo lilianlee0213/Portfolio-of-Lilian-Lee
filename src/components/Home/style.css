@@ -1,14 +1,8 @@
+/******************* Hero Section *******************/
 .hero {
 	height: 400vh;
 }
 .sticky-hero {
-	top: 0;
-	height: 100vh;
-}
-.page-2 {
-	height: 200vh;
-}
-.sticky-page-2 {
 	top: 0;
 	height: 100vh;
 }
@@ -143,4 +137,34 @@
 	background-color: var(--yellow);
 	font-size: 2vw;
 	border-radius: 20px;
+}
+/******************* Hero Section *******************/
+
+.page-2 {
+	height: 200vh;
+}
+.sticky-page-2 {
+	top: 0;
+	height: 100vh;
+}
+
+.page2-text {
+	width: 80%;
+	font-size: 5vw;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	line-height: 1.2;
+}
+.page2-text-transparent {
+	color: transparent;
+	-webkit-text-stroke: 2px black;
+}
+.page2-circle {
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 50%;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	background-color: #ffe61b;
 }
