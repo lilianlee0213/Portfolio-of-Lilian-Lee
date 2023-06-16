@@ -1,7 +1,14 @@
 import {useEffect, useRef, useState} from 'react';
 import './style.css';
-import {motion, useInView, useScroll, useTransform} from 'framer-motion';
+import {
+	motion,
+	useInView,
+	useMotionValueEvent,
+	useScroll,
+	useTransform,
+} from 'framer-motion';
 export default function Home() {
+	const [isCardOut, setCardOut] = useState(false);
 	const targetRef = useRef(null);
 	const inViewRef = useRef(null);
 	const isInView = useInView(inViewRef, {once: true});
@@ -13,8 +20,14 @@ export default function Home() {
 	const rotateXBox = useTransform(scrollYProgress, [0.25, 0.4], [140, -50]);
 	const rotateYBox = useTransform(scrollYProgress, [0.25, 0.4], [140, -50]);
 	const openBox = useTransform(scrollYProgress, [0.4, 0.5], [0, 300]);
-	const cardY = useTransform(scrollYProgress, [0.5, 0.6], [70, -250]);
-
+	const cardY = useTransform(scrollYProgress, [0.5, 0.6], [70, -200]);
+	useMotionValueEvent(scrollYProgress, 'change', (latest) => {
+		if (latest >= 0.6) {
+			setCardOut(true);
+		} else {
+			setCardOut(false);
+		}
+	});
 	return (
 		<div className="section-wrapper">
 			<section id="home" className="section section-1" ref={targetRef}>
@@ -54,7 +67,7 @@ export default function Home() {
 					</motion.div>
 					<motion.div
 						ref={inViewRef}
-						className="absolute w-100 marquee"
+						className="absolute w-100 marquee-container"
 						style={{
 							opacity: isInView ? 1 : 0,
 							transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s',
@@ -100,7 +113,7 @@ export default function Home() {
 					</motion.div>
 					<motion.div
 						ref={inViewRef}
-						className="absolute text-title"
+						className="absolute title-container"
 						style={{
 							transform: isInView ? 'none' : 'translateX(-200px)',
 							opacity: isInView ? 1 : 0,
@@ -113,6 +126,27 @@ export default function Home() {
 							<br />
 							developer
 						</h1>
+					</motion.div>
+					<motion.div className="absolute text-container">
+						<motion.p
+							className="text"
+							initial={{opacity: 0}}
+							animate={{
+								rotate: isCardOut ? [7, 0, -7] : [],
+								scale: isCardOut ? [1, 1.5, 1] : [],
+								opacity: isCardOut ? 1 : 0,
+							}}
+							transition={{
+								rotate: {
+									repeat: Infinity,
+									ease: 'linear',
+									repeatType: 'reverse',
+									duration: 0.3,
+									delay: 0.3,
+								},
+							}}>
+							Hi, It's me, Lilian!
+						</motion.p>
 					</motion.div>
 				</div>
 			</section>
