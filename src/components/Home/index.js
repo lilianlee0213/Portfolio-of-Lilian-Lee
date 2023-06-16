@@ -16,22 +16,24 @@ export default function Home() {
 		target: targetRef,
 		offset: ['start end', 'end start'],
 	});
-	const upboxY = useTransform(scrollYProgress, [0.1, 0.3], ['300%', '0%']);
-	const rotateXBox = useTransform(scrollYProgress, [0.25, 0.4], [140, -50]);
-	const rotateYBox = useTransform(scrollYProgress, [0.25, 0.4], [140, -50]);
-	const openBox = useTransform(scrollYProgress, [0.4, 0.5], [0, 300]);
-	const cardY = useTransform(scrollYProgress, [0.5, 0.6], [70, -200]);
+	const upboxY = useTransform(scrollYProgress, [0.1, 0.3], ['500%', '0%']);
+	const rotateXBox = useTransform(scrollYProgress, [0.25, 0.5], [140, -50]);
+	const rotateYBox = useTransform(scrollYProgress, [0.25, 0.5], [140, -50]);
+	const openBox = useTransform(scrollYProgress, [0.5, 0.6], [0, 300]);
+	const cardY = useTransform(scrollYProgress, [0.6, 0.8], [70, -200]);
+	const opacity = useTransform(scrollYProgress, [0.95, 1], [1, 0]);
 	useMotionValueEvent(scrollYProgress, 'change', (latest) => {
-		if (latest >= 0.6) {
+		if (latest >= 0.8) {
 			setCardOut(true);
 		} else {
 			setCardOut(false);
 		}
+		console.log(latest);
 	});
 	return (
 		<div className="section-wrapper">
 			<section id="home" className="section section-1" ref={targetRef}>
-				<div className="sticky ff-main hero">
+				<motion.div className="sticky ff-main hero" style={{opacity}}>
 					<motion.div
 						className="flex justify-center align-center cube-container"
 						style={{y: upboxY}}>
@@ -115,17 +117,17 @@ export default function Home() {
 						ref={inViewRef}
 						className="absolute title-container"
 						style={{
-							transform: isInView ? 'none' : 'translateX(-200px)',
+							transform: isInView ? 'none' : 'translateX(-200px) ',
 							opacity: isInView ? 1 : 0,
 							transition: 'all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.6s',
 						}}>
-						<h1 className="ff-main fw-700 uppercase">
+						<motion.div className="ff-main fw-700 uppercase">
 							Front-
 							<br />
 							end
 							<br />
 							developer
-						</h1>
+						</motion.div>
 					</motion.div>
 					<motion.div className="absolute text-container">
 						<motion.p
@@ -148,13 +150,7 @@ export default function Home() {
 							Hi, It's me, Lilian!
 						</motion.p>
 					</motion.div>
-				</div>
-			</section>
-			<section id="home" className="section section-home">
-				Home
-			</section>
-			<section id="home" className="section section-home">
-				Home
+				</motion.div>
 			</section>
 		</div>
 	);
