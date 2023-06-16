@@ -10,10 +10,10 @@ export default function Home() {
 		offset: ['start end', 'end start'],
 	});
 	const upboxY = useTransform(scrollYProgress, [0.1, 0.3], ['300%', '0%']);
-	const rotateXBox = useTransform(scrollYProgress, [0.25, 0.4], [140, -410]);
-	const rotateYBox = useTransform(scrollYProgress, [0.25, 0.4], [140, -410]);
+	const rotateXBox = useTransform(scrollYProgress, [0.25, 0.4], [140, -30]);
+	const rotateYBox = useTransform(scrollYProgress, [0.25, 0.4], [140, -50]);
 	const openBox = useTransform(scrollYProgress, [0.4, 0.5], [0, 300]);
-	const cardY = useTransform(scrollYProgress, [0.5, 0.55], [70, -350]);
+	const cardY = useTransform(scrollYProgress, [0.5, 0.6], [70, -250]);
 
 	return (
 		<div className="section-wrapper">
