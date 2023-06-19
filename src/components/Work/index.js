@@ -27,26 +27,24 @@ export default function Work() {
 						</div>
 						<div className="flex flex-col justify-center project-content-container">
 							<small className="project-index">01.</small>
-							<AnimatedText
-								text="Fictional Typeface"
-								className="project-title"
-							/>
+							<div className="project-skills">
+								<ul className="flex">
+									<li>html -</li>
+									<li>css -</li>
+									<li>javascript</li>
+								</ul>
+							</div>
+							<AnimatedText text="Fictional" className="project-title" />
+							<AnimatedText text="typeface" className="project-subtitle" />
 							<p className="project-desc">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
 								fuga id corporis officia eum tempora totam, quaerat natus atque
 								asperiores laborum cum praesentium aperiam nihil perspiciatis
 								voluptas sunt accusantium voluptates.
 							</p>
-							<div className="project-skills">
-								<ul>
-									<li>html</li>
-									<li>css</li>
-									<li>javascript</li>
-								</ul>
-							</div>
-							<div className="project-links">
-								<a href="">Github</a>
-								<a href="">Live Demo</a>
+							<div className="flex uppercase project-links">
+								<a href="">Live Site</a>
+								<a href="">Github Repo</a>
 							</div>
 						</div>
 					</div>
@@ -60,26 +58,24 @@ export default function Work() {
 						</div>
 						<div className="flex flex-col justify-center project-content-container">
 							<small className="project-index">02</small>
-							<AnimatedText
-								text="ACNH Music Player"
-								className="project-title"
-							/>
+							<div className="project-skills">
+								<ul className="flex">
+									<li>html -</li>
+									<li>css -</li>
+									<li>javascript</li>
+								</ul>
+							</div>
+							<AnimatedText text="ACNH Player" className="project-title" />
+							<AnimatedText text="Music Player" className="project-subtitle" />
 							<p className="project-desc">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
 								fuga id corporis officia eum tempora totam, quaerat natus atque
 								asperiores laborum cum praesentium aperiam nihil perspiciatis
 								voluptas sunt accusantium voluptates.
 							</p>
-							<div className="project-skills">
-								<ul>
-									<li>html</li>
-									<li>css</li>
-									<li>javascript</li>
-								</ul>
-							</div>
-							<div className="project-links">
-								<a href="">Github</a>
-								<a href="">Live Demo</a>
+							<div className="flex uppercase project-links">
+								<a href="">Live Site</a>
+								<a href="">Github Repo</a>
 							</div>
 						</div>
 					</motion.div>
@@ -93,23 +89,24 @@ export default function Work() {
 						</div>
 						<div className="flex flex-col justify-center project-content-container">
 							<small className="project-index">03.</small>
-							<AnimatedText text="Youtube Clone" className="project-title" />
+							<div className="project-skills">
+								<ul className="flex">
+									<li>html -</li>
+									<li>css -</li>
+									<li>javascript</li>
+								</ul>
+							</div>
+							<AnimatedText text="Wetube" className="project-title" />
+							<AnimatedText text="Youtube Clone" className="project-subtitle" />
 							<p className="project-desc">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
 								fuga id corporis officia eum tempora totam, quaerat natus atque
 								asperiores laborum cum praesentium aperiam nihil perspiciatis
 								voluptas sunt accusantium voluptates.
 							</p>
-							<div className="project-skills">
-								<ul>
-									<li>html</li>
-									<li>css</li>
-									<li>javascript</li>
-								</ul>
-							</div>
-							<div className="project-links">
-								<a href="">Github</a>
-								<a href="">Live Demo</a>
+							<div className="flex uppercase project-links">
+								<a href="">Live Site</a>
+								<a href="">Github Repo</a>
 							</div>
 						</div>
 					</motion.div>
@@ -123,23 +120,24 @@ export default function Work() {
 						</div>
 						<div className="flex flex-col justify-center project-content-container">
 							<small className="project-index">04.</small>
-							<AnimatedText text="Netflix Clone" className="project-title" />
+							<div className="project-skills">
+								<ul className="flex">
+									<li>html -</li>
+									<li>css -</li>
+									<li>javascript</li>
+								</ul>
+							</div>
+							<AnimatedText text="Netflix" className="project-title" />
+							<AnimatedText text="Netflix Clone" className="project-subtitle" />
 							<p className="project-desc">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
 								fuga id corporis officia eum tempora totam, quaerat natus atque
 								asperiores laborum cum praesentium aperiam nihil perspiciatis
 								voluptas sunt accusantium voluptates.
 							</p>
-							<div className="project-skills">
-								<ul>
-									<li>html</li>
-									<li>css</li>
-									<li>javascript</li>
-								</ul>
-							</div>
-							<div className="project-links">
-								<a href="">Github</a>
-								<a href="">Live Demo</a>
+							<div className="flex uppercase project-links">
+								<a href="">Live Site</a>
+								<a href="">Github Repo</a>
 							</div>
 						</div>
 					</motion.div>
