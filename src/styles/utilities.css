@@ -130,3 +130,7 @@ body {
 span.letter {
 	display: inline-block;
 }
+
+/* body::-webkit-scrollbar {
+	display: none;
+} */

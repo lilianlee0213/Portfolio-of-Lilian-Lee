@@ -2,6 +2,7 @@ import './style.css';
 import {motion, useScroll, useTransform} from 'framer-motion';
 import Hero from './Hero';
 import {useRef} from 'react';
+import AnimatedText from '../AnimatedText/animatedText';
 
 export default function Home() {
 	const targetRef = useRef();
@@ -15,22 +16,28 @@ export default function Home() {
 		<div className="section-wrapper">
 			<Hero />
 			<motion.section
-				className="section page-2"
+				className="section slide-one"
 				ref={targetRef}
 				style={{opacity}}>
-				<div className="sticky sticky-page-2">
-					<h2 className="absolute fw-600 text-center page2-text">
+				<div className="sticky sticky-slide-one">
+					<h2 className="absolute fw-600 text-center slide-one-text">
 						I love creating fun, engaging, and interactive things for the web.
 					</h2>
 					<motion.div
-						className="absolute page2-circle"
+						className="absolute slide-one-circle"
 						style={{width: circleWidth}}></motion.div>
-					<h2 className="absolute fw-600 text-center page2-text page2-text-transparent">
+					<h2 className="absolute fw-600 text-center slide-one-text slide-one-text-transparent">
 						I love creating fun, engaging, and interactive things for the web.
 					</h2>
-					<p className="absolute page2-title">-Lilian Lee</p>
+					<p className="absolute slide-one-title">-Lilian Lee</p>
 				</div>
 			</motion.section>
+			<div className="section slide-two">
+				<div className="flex justify-space align-end h-100 slide-two-text">
+					<AnimatedText text="Selected"></AnimatedText>
+					<AnimatedText text="Work"></AnimatedText>
+				</div>
+			</div>
 		</div>
 	);
 }

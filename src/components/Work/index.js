@@ -1,8 +1,10 @@
 import './style.css';
 export default function Work() {
 	return (
-		<section id="work" className="section section-work">
-			Work
-		</section>
+		<div className="section-wrapper">
+			<section id="work" className="section ">
+				Work
+			</section>
+		</div>
 	);
 }

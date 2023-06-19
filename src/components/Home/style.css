@@ -140,15 +140,15 @@
 }
 /******************* Hero Section *******************/
 
-.page-2 {
+.slide-one {
 	height: 200vh;
 }
-.sticky-page-2 {
+.sticky-slide-one {
 	top: 0;
 	height: 100vh;
 }
 
-.page2-text {
+.slide-one-text {
 	width: 80%;
 	font-size: 5vw;
 	left: 50%;
@@ -156,11 +156,11 @@
 	transform: translate(-50%, -50%);
 	line-height: 1.2;
 }
-.page2-text-transparent {
+.slide-one-text-transparent {
 	color: transparent;
 	-webkit-text-stroke: 2px black;
 }
-.page2-circle {
+.slide-one-circle {
 	transform: translate(-50%, -50%);
 	left: 50%;
 	top: 50%;
@@ -168,10 +168,18 @@
 	border-radius: 50%;
 	background-color: #ffe61b;
 }
-.page2-title {
+.slide-one-title {
 	font-size: 1.5vw;
 	color: black;
 	top: 85%;
 	transform: translate(-50%, -50%);
 	left: 50%;
+}
+.slide-two {
+	height: 50vh;
+}
+.slide-two-text {
+	padding-inline: 2rem;
+	padding-bottom: 2rem;
+	font-size: 6vw;
 }
