@@ -5,7 +5,7 @@ import {useRef} from 'react';
 import AnimatedText from '../AnimatedText/animatedText';
 
 export default function Home() {
-	const targetRef = useRef();
+	const targetRef = useRef(null);
 	const {scrollYProgress} = useScroll({
 		target: targetRef,
 		offset: ['start end', 'end start'],

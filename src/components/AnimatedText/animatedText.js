@@ -1,4 +1,5 @@
-import {motion} from 'framer-motion';
+import {motion, useInView} from 'framer-motion';
+import {useEffect, useRef} from 'react';
 const textReveal = {
 	animate: {
 		transition: {
@@ -22,14 +23,17 @@ const letterAnimation = {
 };
 
 const Letters = ({text}) => {
+	const ref = useRef(null);
+	const inView = useInView(ref, {once: true});
 	return (
 		<motion.span
+			ref={ref}
 			variants={textReveal}
 			initial="initial"
-			animate="animate"
+			animate={inView ? 'animate' : 'initial'}
 			style={{overflow: 'hidden'}}>
-			{[...text].map((letter) => (
-				<motion.span className="letter" variants={letterAnimation}>
+			{[...text].map((letter, index) => (
+				<motion.span className="letter" variants={letterAnimation} key={index}>
 					{letter === ' ' ? '\u00A0' : letter}
 				</motion.span>
 			))}
@@ -37,8 +41,14 @@ const Letters = ({text}) => {
 	);
 };
 const AnimatedText = ({text}) => {
+	const ref = useRef(null);
+	const inView = useInView(ref, {once: true});
 	return (
-		<motion.div variants={textReveal}>
+		<motion.div
+			ref={ref}
+			variants={textReveal}
+			initial="initial"
+			animate={inView ? 'animate' : 'initial'}>
 			<Letters text={text} />
 		</motion.div>
 	);
