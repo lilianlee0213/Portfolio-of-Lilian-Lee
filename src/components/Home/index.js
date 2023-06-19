@@ -32,12 +32,12 @@ export default function Home() {
 					<p className="absolute slide-one-title">-Lilian Lee</p>
 				</div>
 			</motion.section>
-			<div className="section slide-two">
+			<section className="section slide-two">
 				<div className="flex justify-space align-end h-100 slide-two-text">
 					<AnimatedText text="Selected"></AnimatedText>
 					<AnimatedText text="Work"></AnimatedText>
 				</div>
-			</div>
+			</section>
 		</div>
 	);
 }
