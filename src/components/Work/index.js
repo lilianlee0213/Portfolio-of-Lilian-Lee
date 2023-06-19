@@ -2,6 +2,7 @@ import {useRef} from 'react';
 import {motion, useMotionValueEvent} from 'framer-motion';
 import {useScroll, useTransform} from 'framer-motion';
 import './style.css';
+import AnimatedText from '../AnimatedText/animatedText';
 export default function Work() {
 	const targetRef = useRef(null);
 	const {scrollYProgress} = useScroll({
@@ -24,9 +25,12 @@ export default function Work() {
 							<div className="image image-two"></div>
 							<div className="image image-three"></div>
 						</div>
-						<div className="flex flex-col justify-center project-container">
-							<small className="project-index"></small>
-							<h1 className="project-title">01.Fictional Typeface</h1>
+						<div className="flex flex-col justify-center project-content-container">
+							<small className="project-index">01.</small>
+							<AnimatedText
+								text="Fictional Typeface"
+								className="project-title"
+							/>
 							<p className="project-desc">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
 								fuga id corporis officia eum tempora totam, quaerat natus atque
@@ -54,9 +58,12 @@ export default function Work() {
 							<div className="image image-two"></div>
 							<div className="image image-three"></div>
 						</div>
-						<div className="flex flex-col justify-center project-container">
-							<small className="project-index"></small>
-							<h1 className="project-title">02.ACNH Plyaer</h1>
+						<div className="flex flex-col justify-center project-content-container">
+							<small className="project-index">02</small>
+							<AnimatedText
+								text="ACNH Music Player"
+								className="project-title"
+							/>
 							<p className="project-desc">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
 								fuga id corporis officia eum tempora totam, quaerat natus atque
@@ -84,9 +91,9 @@ export default function Work() {
 							<div className="image image-two"></div>
 							<div className="image image-three"></div>
 						</div>
-						<div className="flex flex-col justify-center project-container">
-							<small className="project-index"></small>
-							<h1 className="project-title">03.Wetube</h1>
+						<div className="flex flex-col justify-center project-content-container">
+							<small className="project-index">03.</small>
+							<AnimatedText text="Youtube Clone" className="project-title" />
 							<p className="project-desc">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
 								fuga id corporis officia eum tempora totam, quaerat natus atque
@@ -114,9 +121,9 @@ export default function Work() {
 							<div className="image image-two"></div>
 							<div className="image image-three"></div>
 						</div>
-						<div className="flex flex-col justify-center project-container">
-							<small className="project-index"></small>
-							<h1 className="project-title">04.Netflix</h1>
+						<div className="flex flex-col justify-center project-content-container">
+							<small className="project-index">04.</small>
+							<AnimatedText text="Netflix Clone" className="project-title" />
 							<p className="project-desc">
 								Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
 								fuga id corporis officia eum tempora totam, quaerat natus atque

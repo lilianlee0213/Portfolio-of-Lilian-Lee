@@ -40,7 +40,7 @@ const Letters = ({text}) => {
 		</motion.span>
 	);
 };
-const AnimatedText = ({text}) => {
+const AnimatedText = ({className, text}) => {
 	const ref = useRef(null);
 	const inView = useInView(ref, {once: true});
 	return (
@@ -48,7 +48,8 @@ const AnimatedText = ({text}) => {
 			ref={ref}
 			variants={textReveal}
 			initial="initial"
-			animate={inView ? 'animate' : 'initial'}>
+			animate={inView ? 'animate' : 'initial'}
+			className={className}>
 			<Letters text={text} />
 		</motion.div>
 	);

@@ -1,5 +1,6 @@
 .work {
 	height: 800vh;
+	color: black;
 }
 .projects {
 	top: 0;
@@ -19,6 +20,10 @@
 }
 .image {
 	height: 100%;
+}
+.project-content-container {
+	grid-column: span 2;
+	padding-inline: 5rem;
 }
 .project-one {
 	background-color: #fd4b38;
