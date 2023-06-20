@@ -107,7 +107,7 @@ export default function Home() {
 				</div>
 			</motion.section>
 			<section className="section slide-two">
-				<div className="flex justify-space align-end h-100 slide-two-text">
+				<div className="flex justify-space align-end h-100 fw-500 slide-two-text">
 					<AnimatedText text="Selected"></AnimatedText>
 					<AnimatedText text="Work"></AnimatedText>
 				</div>

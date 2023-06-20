@@ -56,11 +56,11 @@
 	transition: background-color 0.3s ease-in-out;
 }
 .project-links a:hover {
-	background-color: black;
+	background-color: var(--black);
 	color: white;
 }
 .project-one {
-	background-color: #6ac93a;
+	background-color: var(--green);
 }
 .project-one .image {
 	width: 50vw;
@@ -72,7 +72,7 @@
 }
 
 .project-two {
-	background-color: #fff48f;
+	background-color: var(--yellow);
 }
 .project-two .image {
 	width: 18vw;
@@ -84,7 +84,7 @@
 	background-position: center;
 }
 .project-three {
-	background-color: #2fa4ff;
+	background-color: var(--blue);
 }
 .project-three .image {
 	width: 40vw;
@@ -96,7 +96,7 @@
 	background-position: center;
 }
 .project-four {
-	background-color: #ff1818;
+	background-color: var(--pink);
 }
 .project-four .image {
 	width: 30vw;
