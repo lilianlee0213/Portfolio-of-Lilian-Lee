@@ -3,7 +3,7 @@ import {useEffect, useRef} from 'react';
 const textReveal = {
 	animate: {
 		transition: {
-			delayChildren: 0.2,
+			delayChildren: 0.15,
 			staggerChildren: 0.1,
 		},
 	},
@@ -11,7 +11,7 @@ const textReveal = {
 const letterAnimation = {
 	initial: {
 		opacity: 0,
-		y: 30,
+		y: 10,
 	},
 	animate: {
 		opacity: 1,
