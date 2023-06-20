@@ -19,11 +19,9 @@ export default function Work() {
 		<div className="section-wrapper">
 			<section id="work" className="section work" ref={targetRef}>
 				<motion.div className="sticky projects">
-					<div className="absolute grid h-100 project project-one">
+					<div className="absolute grid align-center h-100 project project-one">
 						<div className="project-image-container">
-							<div className="image image-one"></div>
-							<div className="image image-two"></div>
-							<div className="image image-three"></div>
+							<div className="image"></div>
 						</div>
 						<div className="flex flex-col justify-center project-content-container">
 							<small className="project-index">01.</small>
@@ -49,12 +47,10 @@ export default function Work() {
 						</div>
 					</div>
 					<motion.div
-						className="absolute grid h-100 project project-two"
+						className="absolute grid align-center h-100 project project-two"
 						style={{x: project2X}}>
 						<div className="project-image-container">
-							<div className="image image-one"></div>
-							<div className="image image-two"></div>
-							<div className="image image-three"></div>
+							<div className="image"></div>
 						</div>
 						<div className="flex flex-col justify-center project-content-container">
 							<small className="project-index">02</small>
@@ -80,12 +76,10 @@ export default function Work() {
 						</div>
 					</motion.div>
 					<motion.div
-						className="absolute grid h-100 project project-three"
+						className="absolute grid align-center h-100 project project-three"
 						style={{x: project3X}}>
 						<div className="project-image-container">
-							<div className="image image-one"></div>
-							<div className="image image-two"></div>
-							<div className="image image-three"></div>
+							<div className="image"></div>
 						</div>
 						<div className="flex flex-col justify-center project-content-container">
 							<small className="project-index">03.</small>
@@ -111,12 +105,10 @@ export default function Work() {
 						</div>
 					</motion.div>
 					<motion.div
-						className="absolute grid h-100 project project-four"
+						className="absolute grid align-center h-100 project project-four"
 						style={{x: project4X}}>
 						<div className="project-image-container">
-							<div className="image image-one"></div>
-							<div className="image image-two"></div>
-							<div className="image image-three"></div>
+							<div className="image"></div>
 						</div>
 						<div className="flex flex-col justify-center project-content-container">
 							<small className="project-index">04.</small>
