@@ -21,7 +21,7 @@ export default function Home() {
 		target: targetRef,
 		offset: ['start end', 'end start'],
 	});
-	const circleWidth = useTransform(scrollYProgress, [0.3, 0.9], ['0%', '120%']);
+	const circleWidth = useTransform(scrollYProgress, [0.3, 0.9], ['0%', '100%']);
 	const opacity = useTransform(scrollYProgress, [0.85, 0.95], [1, 0]);
 
 	return (
