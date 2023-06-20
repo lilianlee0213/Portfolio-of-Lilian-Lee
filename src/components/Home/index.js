@@ -21,8 +21,8 @@ export default function Home() {
 		target: targetRef,
 		offset: ['start end', 'end start'],
 	});
-	const circleWidth = useTransform(scrollYProgress, [0.3, 0.8], ['0%', '150%']);
-	const opacity = useTransform(scrollYProgress, [0.85, 1], [1, 0]);
+	const circleWidth = useTransform(scrollYProgress, [0.3, 0.9], ['0%', '120%']);
+	const opacity = useTransform(scrollYProgress, [0.85, 0.95], [1, 0]);
 
 	return (
 		<div className="section-wrapper">

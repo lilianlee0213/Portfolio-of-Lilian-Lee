@@ -6,12 +6,12 @@
 	--ff-main: 'Poppins', sans-serif;
 	--ff-second: 'GROUPE', sans-serif;
 	--white: #ffffff;
-	--lightYellow: #f8f4ab;
-	--yellow: #f4ea88;
-	--lightGreen: #a8db98;
-	--green: #a1d9cc;
-	--blue: #8cbcea;
-	--purple: #9b97d2;
+	--black: #111111;
+	--green: #a6fa6e;
+	--orange: #ff8b00;
+	--yellow: #f6ee59;
+	--light-blue: #9fb4cb;
+	--dark-blue: #7695ac;
 }
 
 /* font-family */
@@ -118,14 +118,14 @@
 }
 body {
 	width: 100vw;
-	background-color: black;
-	color: white;
+	color: var(--white);
 	font-family: var(--ff-main);
+	background-color: var(--black);
 	overflow-x: hidden;
 }
 .section {
 	height: 100vh;
-	border: 1px solid white;
+	/* border: 1px solid white; */
 }
 span.letter {
 	display: inline-block;
