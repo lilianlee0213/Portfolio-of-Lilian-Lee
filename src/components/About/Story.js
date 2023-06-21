@@ -2,9 +2,18 @@ import {useEffect, useState} from 'react';
 import teaching1 from '../../images/stories/teaching1.jpg';
 import teaching2 from '../../images/stories/teaching2.jpg';
 import teaching3 from '../../images/stories/teaching3.jpg';
-
+import {motion} from 'framer-motion';
 const teachingImg = [teaching1, teaching2, teaching3];
 
+const progressbarVariant = {
+	initial: {
+		width: '0%',
+	},
+	animate: {
+		width: ['0%', '25%', '50%', '75%', '100%'],
+		transition: {duration: 5, ease: 'linear'},
+	},
+};
 export default function Story() {
 	const [counter, setCounter] = useState(0);
 	const [isModalOpened, setIsModalOpened] = useState(false);
@@ -14,7 +23,7 @@ export default function Story() {
 		if (isModalOpened) {
 			const timer = setTimeout(() => {
 				moveNextStory(background);
-			}, 2000);
+			}, 5000);
 			return () => clearTimeout(timer);
 		}
 	}, [isModalOpened, counter]);
@@ -67,9 +76,33 @@ export default function Story() {
 				className="absolute story-modal-container"
 				style={{display: isModalOpened ? 'block' : 'none'}}>
 				<div className="absolute grid story-modal-progress">
-					<div className="story-modal-progress-bar"></div>
-					<div className="story-modal-progress-bar"></div>
-					<div className="story-modal-progress-bar"></div>
+					<div className="story-modal-progress-bar">
+						{counter === 0 && (
+							<motion.span
+								initial="initial"
+								animate="animate"
+								variants={progressbarVariant}
+							/>
+						)}
+					</div>
+					<div className="story-modal-progress-bar">
+						{counter === 1 && (
+							<motion.span
+								initial="initial"
+								animate="animate"
+								variants={progressbarVariant}
+							/>
+						)}
+					</div>
+					<div className="story-modal-progress-bar">
+						{counter === 2 && (
+							<motion.span
+								initial="initial"
+								animate="animate"
+								variants={progressbarVariant}
+							/>
+						)}
+					</div>
 				</div>
 				<div className="h-100 story-modal" onClick={handleModalClick}>
 					<div className="story-modal-image"></div>
