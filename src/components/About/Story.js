@@ -76,33 +76,17 @@ export default function Story() {
 				className="absolute story-modal-container"
 				style={{display: isModalOpened ? 'block' : 'none'}}>
 				<div className="absolute grid story-modal-progress">
-					<div className="story-modal-progress-bar">
-						{counter === 0 && (
-							<motion.span
-								initial="initial"
-								animate="animate"
-								variants={progressbarVariant}
-							/>
-						)}
-					</div>
-					<div className="story-modal-progress-bar">
-						{counter === 1 && (
-							<motion.span
-								initial="initial"
-								animate="animate"
-								variants={progressbarVariant}
-							/>
-						)}
-					</div>
-					<div className="story-modal-progress-bar">
-						{counter === 2 && (
-							<motion.span
-								initial="initial"
-								animate="animate"
-								variants={progressbarVariant}
-							/>
-						)}
-					</div>
+					{teachingImg.map((img, index) => (
+						<div className="story-modal-progress-bar" key={index}>
+							{counter === index && (
+								<motion.span
+									initial="initial"
+									animate="animate"
+									variants={progressbarVariant}
+								/>
+							)}
+						</div>
+					))}
 				</div>
 				<div className="h-100 story-modal" onClick={handleModalClick}>
 					<div className="story-modal-image"></div>
