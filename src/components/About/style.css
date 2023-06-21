@@ -39,11 +39,17 @@
 .story-cover-image {
 	width: 100%;
 	height: 100%;
-	background-image: url('/src/images/stories/teaching1.jpg');
 	background-size: cover;
 	background-position: center;
 	border-radius: 50%;
 	border: 2px solid var(--white);
+}
+.story-teaching .story-cover-image {
+	background-image: url('/src/images/stories/teaching1.jpg');
+}
+.story-goodTimes .story-cover-image {
+	background-image: url('/src/images/stories/goodTimes1.jpg');
+	background-position: bottom;
 }
 .story-modal-container {
 	top: 50%;
@@ -58,12 +64,12 @@
 .story-modal-progress {
 	width: 100%;
 	top: 10px;
-	grid-template-columns: repeat(3, 1fr);
 	gap: 10px;
 	padding: 5px 10px;
 }
 .story-modal-progress-bar {
 	position: relative;
+	width: 100%;
 	height: 8px;
 	border-radius: 10px;
 	background-color: rgba(213, 213, 213, 0.5);
@@ -80,9 +86,14 @@
 	width: 100%;
 	height: 100%;
 	border-radius: 10px;
-	background-image: url('/src/images/stories/teaching1.jpg');
 	background-size: cover;
 	background-position: center;
+}
+.story-teaching .story-modal-image {
+	background-image: url('/src/images/stories/teaching1.jpg');
+}
+.story-goodTimes .story-modal-image {
+	background-image: url('/src/images/stories/goodTimes1.jpg');
 }
 .story-overlay {
 	position: absolute;
@@ -92,6 +103,7 @@
 	top: 0;
 	background-color: rgba(0, 0, 0, 0.8);
 }
+
 /* content */
 .about-content-desc {
 	line-height: 1.2;

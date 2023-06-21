@@ -1,7 +1,23 @@
 import './style.css';
 import {motion} from 'framer-motion';
-
 import Story from './Story';
+import teaching1 from '../../images/stories/teaching1.jpg';
+import teaching2 from '../../images/stories/teaching2.jpg';
+import teaching3 from '../../images/stories/teaching3.jpg';
+import goodTimes1 from '../../images/stories/goodTimes1.jpg';
+import goodTimes2 from '../../images/stories/goodTimes2.jpg';
+import goodTimes3 from '../../images/stories/goodTimes3.jpg';
+import goodTimes4 from '../../images/stories/goodTimes4.jpg';
+import goodTimes5 from '../../images/stories/goodTimes5.jpg';
+const teachingImg = [teaching1, teaching2, teaching3];
+const goodTimesImg = [
+	goodTimes1,
+	goodTimes2,
+	goodTimes3,
+	goodTimes4,
+	goodTimes5,
+];
+
 export default function About() {
 	return (
 		<div className="section-wrapper">
@@ -15,7 +31,16 @@ export default function About() {
 				</div>
 				<div className="about-content-container">
 					<div className="flex about-content-stories">
-						<Story />
+						<Story
+							imgArray={teachingImg}
+							className="story-teaching"
+							title="🍎"
+						/>
+						<Story
+							imgArray={goodTimesImg}
+							className="story-goodTimes"
+							title="Good times"
+						/>
 					</div>
 					<div className="about-content-desc">
 						<h1 className="fw-300">Lilian Lee</h1>
