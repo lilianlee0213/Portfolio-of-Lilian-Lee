@@ -1,21 +1,21 @@
 import './style.css';
 import {motion} from 'framer-motion';
+
+import Story from './Story';
 export default function About() {
 	return (
 		<div className="section-wrapper">
-			<section id="about" className="grid justify-center section section-about">
+			<section
+				id="about"
+				className="relative grid justify-center section section-about">
 				<div className="about-image-container">
 					<motion.div
 						className="w-100 h-100 about-image"
 						whileHover={{scale: 1.05}}></motion.div>
 				</div>
 				<div className="about-content-container">
-					<div className="about-content-stories">
-						<div className="story">
-							<div className="story-cover">Work</div>
-							<div className="story-cover">🍎</div>
-							<div className="story-title">Good times</div>
-						</div>
+					<div className="flex about-content-stories">
+						<Story />
 					</div>
 					<div className="about-content-desc">
 						<h1 className="fw-300">Lilian Lee</h1>
