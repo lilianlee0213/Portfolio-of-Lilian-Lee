@@ -19,15 +19,30 @@
 	background-image: url('/src/images/about-image.jpg');
 }
 /* stories */
-.about-content-stories {
+.about-content-stories-container {
+	grid-template-columns: repeat(2, 1fr);
+	gap: 0.5rem;
 	margin-bottom: 2.5rem;
-	gap: 1.5rem;
+	padding: 1rem 2rem;
+	border-radius: 20px;
+	color: black;
+	background-color: #fff;
+	box-shadow: 6px 5px 10px rgba(255, 255, 255, 0.3);
+}
+.about-content-stories-container p {
+	font-size: 1vw;
+	line-height: 1.2;
+}
+.about-content-stories {
+	gap: 1rem;
+	font-size: 0.8vw;
+	text-align: center;
 }
 .story-cover {
-	margin-bottom: 0.8rem;
+	margin-bottom: 0.4rem;
 	padding: 2px;
-	width: 90px;
-	height: 90px;
+	width: 5vw;
+	aspect-ratio: 1;
 	border-radius: 50%;
 	background: linear-gradient(
 		180deg,

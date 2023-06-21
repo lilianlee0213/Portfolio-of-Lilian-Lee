@@ -15,19 +15,29 @@ export default function About() {
 						whileHover={{scale: 1.05}}></motion.div>
 				</div>
 				<div className="about-content-container">
-					<div className="flex about-content-stories">
-						<Story
-							imgArray={teachingImg}
-							className="story-teaching"
-							title="🍎"
-						/>
-						<Story
-							imgArray={goodTimesImg}
-							className="story-goodTimes"
-							title="Good times"
-						/>
-						<Story imgArray={vibesImg} className="story-vibes" title="Vibes" />
+					<div className="grid align-center about-content-stories-container">
+						<p>
+							Wanna kwow who I am? Chances are you'll find some answers here.
+						</p>
+						<div className="flex align-center justify-center about-content-stories">
+							<Story
+								imgArray={teachingImg}
+								className="story-teaching"
+								title="🍎"
+							/>
+							<Story
+								imgArray={goodTimesImg}
+								className="story-goodTimes"
+								title="Good times"
+							/>
+							<Story
+								imgArray={vibesImg}
+								className="story-vibes"
+								title="Vibes"
+							/>
+						</div>
 					</div>
+
 					<div className="about-content-desc">
 						<h1 className="fw-300">Lilian Lee</h1>
 						<h2 className="fw-300">Front-End Developer</h2>
