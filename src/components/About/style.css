@@ -51,11 +51,14 @@
 	background-image: url('/src/images/stories/goodTimes1.jpg');
 	background-position: bottom;
 }
+.story-vibes .story-cover-image {
+	background-image: url('/src/images/stories/vibes1.jpg');
+}
 .story-modal-container {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	width: 30vw;
+	width: 30rem;
 	aspect-ratio: 2/3;
 	border-radius: 10px;
 	background-color: pink;
@@ -94,6 +97,9 @@
 }
 .story-goodTimes .story-modal-image {
 	background-image: url('/src/images/stories/goodTimes1.jpg');
+}
+.story-vibes .story-modal-image {
+	background-image: url('/src/images/stories/vibes1.jpg');
 }
 .story-overlay {
 	position: absolute;
