@@ -45,7 +45,7 @@
 	border-radius: 50%;
 	border: 2px solid var(--white);
 }
-.story-modals {
+.story-modal-container {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -53,6 +53,7 @@
 	aspect-ratio: 2/3;
 	border-radius: 10px;
 	background-color: pink;
+	z-index: 1;
 }
 .story-modal-progress {
 	width: 100%;
@@ -73,6 +74,14 @@
 	background-image: url('/src/images/stories/teaching1.jpg');
 	background-size: cover;
 	background-position: center;
+}
+.story-overlay {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	left: 0;
+	top: 0;
+	background-color: rgba(0, 0, 0, 0.5);
 }
 /* content */
 .about-content-desc {
