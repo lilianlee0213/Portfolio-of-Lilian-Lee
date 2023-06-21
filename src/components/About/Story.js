@@ -7,7 +7,8 @@ const teachingImg = [teaching1, teaching2, teaching3];
 
 export default function Story() {
 	const [counter, setCounter] = useState(0);
-	const [isModalOpened, SetIsModalOpen] = useState(false);
+	const [isModalOpened, setIsModalOpened] = useState(false);
+	const [allViewed, setAllViewed] = useState(false);
 	useEffect(() => {
 		const background = document.querySelector('.story-modal-image');
 		if (isModalOpened) {
@@ -19,11 +20,11 @@ export default function Story() {
 	}, [isModalOpened, counter]);
 
 	const handleStoryClick = () => {
-		SetIsModalOpen(true);
+		setIsModalOpened(true);
 	};
 
 	const handleStoryExit = () => {
-		SetIsModalOpen(false);
+		setIsModalOpened(false);
 	};
 
 	const moveNextStory = (background) => {
@@ -32,8 +33,9 @@ export default function Story() {
 			const nextBackground = teachingImg[counter + 1];
 			background.style.backgroundImage = `url('${nextBackground}')`;
 		} else {
-			SetIsModalOpen(false);
+			setIsModalOpened(false);
 			setCounter(teachingImg.length - 1);
+			setAllViewed(true);
 		}
 	};
 	const handleModalClick = (event) => {
@@ -54,7 +56,10 @@ export default function Story() {
 
 	return (
 		<div className="story story-projects">
-			<div className="story-cover" onClick={handleStoryClick}>
+			<div
+				className="story-cover"
+				onClick={handleStoryClick}
+				style={{opacity: allViewed ? 0.6 : 1}}>
 				<div className="story-cover-image"></div>
 			</div>
 			<div className="text-center story-title">Projects</div>
