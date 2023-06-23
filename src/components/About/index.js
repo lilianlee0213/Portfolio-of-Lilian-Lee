@@ -56,24 +56,25 @@ export default function About() {
 						<AnimatedText text="Skills" className="about-title" />
 						<ul className="flex align-center skills">
 							<li className="flex flex-col align-center skill">
-								<i className="fa-brands fa-html5"></i>
-								Html
+								<i class="devicon-html5-plain colored"></i> Html
 							</li>
 							<li className="flex flex-col align-center skill">
-								<i className="fa-brands fa-css3-alt"></i>
+								<i class="devicon-css3-plain colored"></i>
 								CSS
 							</li>
 							<li className="flex flex-col align-center skill">
-								<i className="fa-brands fa-square-js"></i>
-								Javascript
+								<i class="devicon-javascript-plain colored"></i> Javascript
 							</li>
 							<li className="flex flex-col align-center skill">
-								<i className="fa-brands fa-react"></i>
+								<i class="devicon-react-original colored"></i>
 								React
 							</li>
 							<li className="flex flex-col align-center skill">
-								<i className="fa-brands fa-github"></i>
-								Github
+								<i class="devicon-typescript-plain colored"></i>
+								Typescript
+							</li>
+							<li className="flex flex-col align-center skill">
+								<i class="devicon-github-original"></i> Github
 							</li>
 						</ul>
 					</div>
