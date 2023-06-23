@@ -68,10 +68,6 @@ export default function About() {
 								Javascript
 							</li>
 							<li className="flex flex-col align-center skill">
-								<i className="fa-brands fa-sass"></i>
-								Sass
-							</li>
-							<li className="flex flex-col align-center skill">
 								<i className="fa-brands fa-react"></i>
 								React
 							</li>

@@ -34,12 +34,29 @@ export default function Work() {
 							</div>
 							<AnimatedText text="Fictional" className="project-title" />
 							<AnimatedText text="typeface" className="project-subtitle" />
-							<p className="project-desc">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-								fuga id corporis officia eum tempora totam, quaerat natus atque
-								asperiores laborum cum praesentium aperiam nihil perspiciatis
-								voluptas sunt accusantium voluptates.
-							</p>
+							<ul className="project-desc">
+								<li>
+									Constructed a website using only HTML, CSS, and JavaScript,
+									taking inspiration from an existing{' '}
+									<em>"Fictional Typeface"</em> website.
+								</li>
+								<li>
+									Created a <em>"Select Mode"</em> to explore the various font
+									sizes and appearance.
+								</li>
+								<li>
+									Developed <em>"Text Mode"</em> for users to directly edit and
+									use the font.
+								</li>
+								<li>
+									Built a fun shooting game called <em>"Fire Mode"</em> that
+									users can shoot text element.
+								</li>
+								<li>
+									Enhanced the user experience by incorporating animations and
+									sound effects for a more engaging font exploration.
+								</li>
+							</ul>
 							<div className="flex uppercase project-links">
 								<a href="">Live Site</a>
 								<a href="">Github Repo</a>
@@ -56,19 +73,31 @@ export default function Work() {
 							<small className="project-index">02</small>
 							<div className="project-skills">
 								<ul className="flex">
-									<li>html -</li>
-									<li>css -</li>
-									<li>javascript</li>
+									<li>React -</li>
+									<li>Css -</li>
+									<li>Rest Api</li>
 								</ul>
 							</div>
 							<AnimatedText text="ACNH Player" className="project-title" />
 							<AnimatedText text="Music Player" className="project-subtitle" />
-							<p className="project-desc">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-								fuga id corporis officia eum tempora totam, quaerat natus atque
-								asperiores laborum cum praesentium aperiam nihil perspiciatis
-								voluptas sunt accusantium voluptates.
-							</p>
+							<ul className="project-desc">
+								<li>
+									Retrieved music data using the Animal Crossing New
+									Horizons(ACNH) free RESTful API
+								</li>
+								<li>
+									Allowed users to discover various music with recommended songs
+									by ACNH popular villagers
+								</li>
+								<li>
+									Built a music player with features such as play, pause, and
+									timeline
+								</li>
+								<li>
+									Designed the interface with a vibe reminiscent of Animal
+									Crossing
+								</li>
+							</ul>
 							<div className="flex uppercase project-links">
 								<a href="">Live Site</a>
 								<a href="">Github Repo</a>
@@ -85,19 +114,30 @@ export default function Work() {
 							<small className="project-index">03.</small>
 							<div className="project-skills">
 								<ul className="flex">
-									<li>html -</li>
-									<li>css -</li>
-									<li>javascript</li>
+									<li>html5 -</li>
+									<li>css3 -</li>
+									<li>pug -</li>
+									<li>NodeJS -</li>
+									<li>MongoDB -</li>
+									<li>Express</li>
 								</ul>
 							</div>
 							<AnimatedText text="Wetube" className="project-title" />
 							<AnimatedText text="Youtube Clone" className="project-subtitle" />
-							<p className="project-desc">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-								fuga id corporis officia eum tempora totam, quaerat natus atque
-								asperiores laborum cum praesentium aperiam nihil perspiciatis
-								voluptas sunt accusantium voluptates.
-							</p>
+							<ul className="project-desc">
+								<li>
+									Created models for videos, user information, comments using
+									Mongoose and stored them in MongoDB
+								</li>
+								<li>
+									Implemented user registration and login/logout with GitHub
+									using the OAuth authentication protocol
+								</li>
+								<li>
+									Allowed users to upload, edit, delete, and search videos
+								</li>
+								<li>Real-time comments users can create, edit and delete</li>
+							</ul>
 							<div className="flex uppercase project-links">
 								<a href="">Live Site</a>
 								<a href="">Github Repo</a>
@@ -114,19 +154,31 @@ export default function Work() {
 							<small className="project-index">04.</small>
 							<div className="project-skills">
 								<ul className="flex">
-									<li>html -</li>
-									<li>css -</li>
-									<li>javascript</li>
+									<li>React -</li>
+									<li>Typescript-</li>
+									<li>Rest Api</li>
 								</ul>
 							</div>
 							<AnimatedText text="Netflix" className="project-title" />
 							<AnimatedText text="Netflix Clone" className="project-subtitle" />
-							<p className="project-desc">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-								fuga id corporis officia eum tempora totam, quaerat natus atque
-								asperiores laborum cum praesentium aperiam nihil perspiciatis
-								voluptas sunt accusantium voluptates.
-							</p>
+							<ul className="project-desc">
+								<li>
+									Information on movies/tvs pulled from{' '}
+									<em>Movie Database(TMDB)</em> API
+								</li>
+								<li>
+									Using pagination, movies and tv-shows can be pulled as users
+									request them
+								</li>
+								<li>
+									Incorporated engaging animations and interactive features like
+									sliders and modals using Framer Motion
+								</li>
+								<li>
+									Catagorized movies/tvs as "Now Playing", "Popular", and "Top
+									Rated"
+								</li>
+							</ul>
 							<div className="flex uppercase project-links">
 								<a href="">Live Site</a>
 								<a href="">Github Repo</a>
