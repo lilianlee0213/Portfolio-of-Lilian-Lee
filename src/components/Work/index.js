@@ -17,6 +17,12 @@ export default function Work() {
 	});
 	return (
 		<div className="section-wrapper">
+			<section className="section section-heading">
+				<div className="flex justify-space align-end h-100 fw-500 heading-text">
+					<AnimatedText text="Selected"></AnimatedText>
+					<AnimatedText text="Work"></AnimatedText>
+				</div>
+			</section>
 			<section id="work" className="section work" ref={targetRef}>
 				<motion.div className="sticky projects">
 					<div className="absolute grid align-center h-100 project project-one">

@@ -116,11 +116,3 @@
 	transform: translate(-50%, -50%);
 	left: 50%;
 }
-.slide-two {
-	height: 50vh;
-}
-.slide-two-text {
-	padding-inline: 2rem;
-	padding-bottom: 2rem;
-	font-size: 6vw;
-}

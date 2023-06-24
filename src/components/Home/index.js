@@ -106,12 +106,6 @@ export default function Home() {
 					<p className="absolute slide-one-title">-Lilian Lee</p>
 				</div>
 			</motion.section>
-			<section className="section slide-two">
-				<div className="flex justify-space align-end h-100 fw-500 slide-two-text">
-					<AnimatedText text="Selected"></AnimatedText>
-					<AnimatedText text="Work"></AnimatedText>
-				</div>
-			</section>
 		</div>
 	);
 }
