@@ -33,7 +33,6 @@ export default function Work() {
 								</ul>
 							</div>
 							<AnimatedText text="Fictional" className="project-title" />
-							<AnimatedText text="typeface" className="project-subtitle" />
 							<ul className="project-desc">
 								<li>
 									Constructed a website using only HTML, CSS, and JavaScript,
@@ -74,12 +73,11 @@ export default function Work() {
 							<div className="project-skills">
 								<ul className="flex">
 									<li>React -</li>
-									<li>Css -</li>
+									<li>React Query -</li>
 									<li>Rest Api</li>
 								</ul>
 							</div>
 							<AnimatedText text="ACNH Player" className="project-title" />
-							<AnimatedText text="Music Player" className="project-subtitle" />
 							<ul className="project-desc">
 								<li>
 									Retrieved music data using the Animal Crossing New
@@ -114,8 +112,8 @@ export default function Work() {
 							<small className="project-index">03.</small>
 							<div className="project-skills">
 								<ul className="flex">
-									<li>html5 -</li>
-									<li>css3 -</li>
+									<li>html -</li>
+									<li>css -</li>
 									<li>pug -</li>
 									<li>NodeJS -</li>
 									<li>MongoDB -</li>
@@ -123,7 +121,6 @@ export default function Work() {
 								</ul>
 							</div>
 							<AnimatedText text="Wetube" className="project-title" />
-							<AnimatedText text="Youtube Clone" className="project-subtitle" />
 							<ul className="project-desc">
 								<li>
 									Created models for videos, user information, comments using
@@ -157,12 +154,12 @@ export default function Work() {
 							<div className="project-skills">
 								<ul className="flex">
 									<li>React -</li>
+									<li>React Query -</li>
 									<li>Typescript-</li>
 									<li>Rest Api</li>
 								</ul>
 							</div>
 							<AnimatedText text="Netflix" className="project-title" />
-							<AnimatedText text="Netflix Clone" className="project-subtitle" />
 							<ul className="project-desc">
 								<li>
 									Information on movies/tvs pulled from{' '}

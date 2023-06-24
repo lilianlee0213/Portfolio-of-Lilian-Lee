@@ -24,28 +24,23 @@
 	font-size: 3vw;
 }
 .project-skills {
-	font-size: 1.1vw;
-	font-weight: 500;
+	font-size: 1rem;
 	text-transform: uppercase;
+	margin-bottom: 1rem;
 }
 .project-skills li {
 	margin-left: 0.2rem;
 }
 .project-title {
-	margin-bottom: 0.5rem;
 	font-size: 4.5vw;
 	font-weight: 600;
-}
-.project-subtitle {
-	margin-left: 0.2rem;
-	margin-bottom: 3rem;
-	font-size: 1.5vw;
+	margin-bottom: 1.5rem;
 }
 .project-desc {
 	margin-bottom: 3rem;
-	margin-left: 2.5rem;
 	line-height: 1.5;
 	width: 550px;
+	padding-inline: 1.5rem;
 }
 .project-desc li {
 	font-size: 1rem;
@@ -56,7 +51,6 @@
 	font-weight: 600;
 }
 .project-links {
-	margin-left: 1.5rem;
 	gap: 1.5rem;
 }
 .project-links a {
