@@ -18,10 +18,10 @@
 	background-size: cover;
 	background-image: url('/src/images/about-image.jpg');
 }
-/* stories */
+/* content-stories */
 .about-content-stories-container {
 	grid-template-columns: repeat(2, 1fr);
-	gap: 0.5rem;
+	gap: 1rem;
 	padding: 1rem 2rem;
 	border-radius: 20px;
 	color: black;
@@ -29,7 +29,7 @@
 	box-shadow: 6px 5px 10px rgba(255, 255, 255, 0.3);
 }
 .about-content-stories-container p {
-	font-size: 1vw;
+	font-size: 1rem;
 	line-height: 1.2;
 }
 .about-content-stories {
@@ -124,22 +124,35 @@
 	background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* content */
+/* content-desc */
 .about-content-container {
 	gap: 3rem;
-}
-.about-content-desc {
-	line-height: 1.2;
 }
 .about-title {
 	margin-bottom: 1.5rem;
 	font-size: 2rem;
 	text-transform: uppercase;
 	font-weight: 500;
+	color: var(--orange);
 }
-.about-content-desc p {
+.about-bold-text {
+	font-size: 3rem;
+	font-weight: 500;
+	margin-bottom: 1rem;
+	color: var(--green);
+}
+.about-text {
+	font-weight: 300;
 	font-size: 1rem;
-	line-height: 1.2;
+	line-height: 1.5;
+	width: 680px;
+}
+.about-text:not(:last-of-type) {
+	margin-bottom: 1rem;
+}
+.about-text em {
+	font-weight: 500;
+	color: var(--orange);
 }
 .skills {
 	gap: 2rem;

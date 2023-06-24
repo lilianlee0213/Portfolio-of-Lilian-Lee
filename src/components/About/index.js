@@ -17,8 +17,10 @@ export default function About() {
 				</div>
 				<div className="flex flex-col about-content-container">
 					<div className="grid align-center about-content-stories-container">
-						<p>
-							Wanna kwow who I am? Chances are you'll find some answers here.
+						<p className="text-center">
+							Wanna kwow who I am?
+							<br />
+							Chances are you'll find some answers here.
 						</p>
 						<div className="flex align-center justify-center about-content-stories">
 							<Story
@@ -45,25 +47,38 @@ export default function About() {
 					</div>
 					<div className="about-content-desc">
 						<AnimatedText text="About Me" className="about-title" />
-						<p className="fw-300">
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae
-							repellendus, perferendis praesentium aspernatur, quisquam nam
-							molestias pariatur reprehenderit magnam eos minus ab maiores autem
-							asperiores tempore quidem explicabo dicta laboriosam.
+						<h1 className="about-bold-text">Hey, I'm Lilian!</h1>
+						<p className="about-text">
+							I am a former teacher turned <em>front-end developer</em>. My
+							journey started with a simple desire to create, and along the way,
+							I found a deep interest and excitement in building web
+							applications.
+						</p>
+						<p className="about-text">
+							I'm truly passionate about crafting captivating UI effects and
+							animations that provide both entertainment and memorable user
+							experiences. I'm excited to work alongside other amazing
+							programmers and expand my skills and knowledge in the field!
+						</p>
+						<p className="about-text">
+							Other than coding, I enjoy photography, hanging out with my
+							friends, and playing PUBG and Animal Crossing.
 						</p>
 					</div>
 					<div className="about-content-skills">
 						<AnimatedText text="Skills" className="about-title" />
 						<ul className="flex align-center skills">
 							<li className="flex flex-col align-center skill">
-								<i class="devicon-html5-plain colored"></i> Html
+								<i class="devicon-html5-plain colored"></i>
+								Html
 							</li>
 							<li className="flex flex-col align-center skill">
 								<i class="devicon-css3-plain colored"></i>
 								CSS
 							</li>
 							<li className="flex flex-col align-center skill">
-								<i class="devicon-javascript-plain colored"></i> Javascript
+								<i class="devicon-javascript-plain colored"></i>
+								Javascript
 							</li>
 							<li className="flex flex-col align-center skill">
 								<i class="devicon-react-original colored"></i>
@@ -74,7 +89,8 @@ export default function About() {
 								Typescript
 							</li>
 							<li className="flex flex-col align-center skill">
-								<i class="devicon-github-original"></i> Github
+								<i class="devicon-github-original"></i>
+								Github
 							</li>
 						</ul>
 					</div>

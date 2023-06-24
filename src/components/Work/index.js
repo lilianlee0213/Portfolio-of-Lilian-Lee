@@ -131,12 +131,14 @@ export default function Work() {
 								</li>
 								<li>
 									Implemented user registration and login/logout with GitHub
-									using the OAuth authentication protocol
+									using the OAuth authentication
 								</li>
 								<li>
 									Allowed users to upload, edit, delete, and search videos
 								</li>
-								<li>Real-time comments users can create, edit and delete</li>
+								<li>
+									Real-time comments that users can create, edit and delete
+								</li>
 							</ul>
 							<div className="flex uppercase project-links">
 								<a href="">Live Site</a>
