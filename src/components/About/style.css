@@ -2,7 +2,6 @@
 	padding: 5rem;
 	padding-top: 8rem;
 	grid-template-columns: repeat(2, 1fr);
-	border: 1px solid white;
 }
 /* main image */
 .about-image-container {
