@@ -1,5 +1,5 @@
 import {useRef} from 'react';
-import {motion, useMotionValueEvent} from 'framer-motion';
+import {motion} from 'framer-motion';
 import {useScroll, useTransform} from 'framer-motion';
 import './style.css';
 import AnimatedText from '../AnimatedText/animatedText';
@@ -9,12 +9,17 @@ export default function Work() {
 		target: targetRef,
 		offset: ['start end', 'end start'],
 	});
-	const project2X = useTransform(scrollYProgress, [0.15, 0.3], ['0%', '-100%']);
-	const project3X = useTransform(scrollYProgress, [0.35, 0.5], ['0%', '-100%']);
-	const project4X = useTransform(scrollYProgress, [0.65, 0.8], ['0%', '-100%']);
-	useMotionValueEvent(scrollYProgress, 'change', (latest) => {
-		console.log(latest);
-	});
+	const project2X = useTransform(
+		scrollYProgress,
+		[0.15, 0.35],
+		['0%', '-100%']
+	);
+	const project3X = useTransform(scrollYProgress, [0.4, 0.6], ['0%', '-100%']);
+	const project4X = useTransform(
+		scrollYProgress,
+		[0.65, 0.85],
+		['0%', '-100%']
+	);
 	return (
 		<div className="section-wrapper">
 			<section className="section section-heading">
