@@ -15,8 +15,9 @@
 }
 .nav-links li a {
 	position: relative;
-	opacity: 0.7;
+	opacity: 0.8;
 	transition: opacity 0.3s ease-in-out;
+	font-weight: 500;
 }
 .nav-links li a:hover {
 	opacity: 1;
