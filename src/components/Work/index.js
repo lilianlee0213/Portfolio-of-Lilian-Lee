@@ -21,7 +21,7 @@ export default function Work() {
 		['0%', '-100%']
 	);
 	return (
-		<div className="section-wrapper">
+		<>
 			<section className="section section-heading">
 				<div className="flex justify-space align-end h-100 fw-500 heading-text">
 					<AnimatedText text="Selected"></AnimatedText>
@@ -197,6 +197,6 @@ export default function Work() {
 					</motion.div>
 				</motion.div>
 			</section>
-		</div>
+		</>
 	);
 }
