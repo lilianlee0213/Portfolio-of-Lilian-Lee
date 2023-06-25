@@ -10,6 +10,7 @@ export default function About() {
 			<section className="section section-heading">
 				<div className="flex justify-space align-end h-100 fw-500 heading-text">
 					<AnimatedText text="About"></AnimatedText>
+					<AnimatedText text="Me"></AnimatedText>
 				</div>
 			</section>
 			<section
