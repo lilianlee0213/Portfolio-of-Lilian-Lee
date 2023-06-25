@@ -25,8 +25,8 @@ export default function Home() {
 	const opacity = useTransform(scrollYProgress, [0.85, 0.95], [1, 0]);
 
 	return (
-		<div className="section-wrapper">
-			<section id="home" className="section section-hero">
+		<>
+			<main id="home" className="section section-hero">
 				<div className="absolute w-100 hero-heading">
 					<div className="absolute w-100 fw-700 uppercase text-center hero-main-text hero-main-top-text">
 						<AnimatedText text="Hello There"></AnimatedText>
@@ -89,24 +89,24 @@ export default function Home() {
 						{MarqueeSlide()}
 					</>
 				</motion.div>
-			</section>
+			</main>
 			<motion.section
-				className="section slide-one"
+				className="section section-intro"
 				ref={targetRef}
 				style={{opacity}}>
-				<div className="sticky sticky-slide-one">
-					<h2 className="absolute fw-600 text-center slide-one-text">
+				<div className="sticky sticky-section-intro">
+					<h2 className="absolute fw-600 text-center section-intro-text">
 						I love creating fun, engaging, and interactive things for the web.
 					</h2>
 					<motion.div
-						className="absolute slide-one-circle"
+						className="absolute section-intro-circle"
 						style={{width: circleWidth}}></motion.div>
-					<h2 className="absolute fw-600 text-center slide-one-text slide-one-text-transparent">
+					<h2 className="absolute fw-600 text-center section-intro-text section-intro-text-transparent">
 						I love creating fun, engaging, and interactive things for the web.
 					</h2>
-					<p className="absolute slide-one-title">-Lilian Lee</p>
+					<p className="absolute section-intro-title">-Lilian Lee</p>
 				</div>
 			</motion.section>
-		</div>
+		</>
 	);
 }

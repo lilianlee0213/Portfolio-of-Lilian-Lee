@@ -1,4 +1,5 @@
-/******************* Hero Section *******************/
+/* section-hero */
+
 .section-hero {
 	height: 100vh;
 }
@@ -86,14 +87,15 @@
 		transform: translateX(-100%);
 	}
 }
-.slide-one {
+/* section intro */
+.section-intro {
 	height: 200vh;
 }
-.sticky-slide-one {
+.sticky-section-intro {
 	top: 0;
 	height: 100vh;
 }
-.slide-one-text {
+.section-intro-text {
 	width: 80%;
 	font-size: 5vw;
 	left: 50%;
@@ -101,11 +103,11 @@
 	transform: translate(-50%, -50%);
 	line-height: 1.2;
 }
-.slide-one-text-transparent {
+.section-intro-text-transparent {
 	color: transparent;
 	-webkit-text-stroke: 2px var(--black);
 }
-.slide-one-circle {
+.section-intro-circle {
 	transform: translate(-50%, -50%);
 	left: 50%;
 	top: 50%;
@@ -113,7 +115,7 @@
 	border-radius: 50%;
 	background-color: var(--yellow);
 }
-.slide-one-title {
+.section-intro-title {
 	font-size: 1.5vw;
 	color: var(--black);
 	top: 85%;
