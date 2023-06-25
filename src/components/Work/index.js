@@ -20,6 +20,7 @@ export default function Work() {
 		[0.65, 0.85],
 		['0%', '-100%']
 	);
+	const opacity = useTransform(scrollYProgress, [0.95, 1], [1, 0]);
 	return (
 		<>
 			<section className="section section-heading">
@@ -28,7 +29,11 @@ export default function Work() {
 					<AnimatedText text="Work"></AnimatedText>
 				</div>
 			</section>
-			<section id="work" className="section work" ref={targetRef}>
+			<motion.section
+				id="work"
+				className="section work"
+				ref={targetRef}
+				style={{opacity}}>
 				<motion.div className="sticky projects">
 					<div className="absolute grid align-center h-100 project project-one">
 						<div className="project-image-container">
@@ -196,7 +201,7 @@ export default function Work() {
 						</div>
 					</motion.div>
 				</motion.div>
-			</section>
+			</motion.section>
 		</>
 	);
 }

@@ -64,7 +64,7 @@
 	color: white;
 }
 .project-one {
-	background-color: var(--green);
+	background-color: #91dc71;
 }
 .project-one .image {
 	width: 50vw;
@@ -76,7 +76,8 @@
 }
 
 .project-two {
-	background-color: var(--yellow);
+	/* background-color: var(--yellow); */
+	background-color: #ffe577;
 }
 .project-two .image {
 	width: 18vw;
