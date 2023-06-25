@@ -1,0 +1,32 @@
+.section-contact {
+	height: 80vh;
+}
+.contact-links {
+	margin-bottom: 1.5rem;
+	padding-inline: 4rem;
+	font-size: 1.5rem;
+	z-index: 1;
+}
+.contact-link {
+	position: relative;
+	cursor: pointer;
+}
+.contact-link::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -2px;
+	width: 0%;
+	height: 4px;
+	background-color: var(--orange);
+	transition: width 0.3s ease-in-out;
+}
+.contact-link:hover.contact-link::after {
+	width: 100%;
+}
+.contact-title {
+	line-height: 1;
+	font-size: 12vw;
+	color: var(--blue);
+	white-space: nowrap;
+}

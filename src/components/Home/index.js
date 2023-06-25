@@ -26,7 +26,7 @@ export default function Home() {
 
 	return (
 		<div className="section-wrapper">
-			<section className="section section-hero">
+			<section id="home" className="section section-hero">
 				<div className="absolute w-100 hero-heading">
 					<div className="absolute w-100 fw-700 uppercase text-center hero-main-text hero-main-top-text">
 						<AnimatedText text="Hello There"></AnimatedText>
