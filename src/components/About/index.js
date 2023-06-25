@@ -95,7 +95,7 @@ export default function About() {
 								Typescript
 							</li>
 							<li className="flex flex-col align-center skill">
-								<i class="devicon-github-original"></i>
+								<i className="devicon-github-original"></i>
 								Github
 							</li>
 						</ul>
