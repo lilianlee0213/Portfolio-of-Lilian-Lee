@@ -49,11 +49,12 @@ export default function Home() {
 								transition={{duration: 0.3}}></motion.div>
 						</motion.div>
 						<motion.h1
+							className="text-center"
 							style={{
 								opacity: isInView ? 1 : 0,
 								transition: 'all .6s cubic-bezier(0.17, 0.55, 0.55, 1) 1.3s',
 							}}>
-							Front-end <br />
+							a Front-end <br />
 							Developer
 						</motion.h1>
 					</motion.div>

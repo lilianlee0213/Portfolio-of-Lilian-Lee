@@ -28,6 +28,10 @@
 .hero-main-middle h1 {
 	font-size: 1.2rem;
 	margin-bottom: 10rem;
+	letter-spacing: 2px;
+}
+.hero-main-middle h1:last-of-type {
+	margin-bottom: 9rem;
 }
 .hero-main-middle-image {
 	width: 500px;
