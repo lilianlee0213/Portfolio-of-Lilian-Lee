@@ -7,16 +7,48 @@ export default function Header() {
 			<nav className="navbar">
 				<ul className="flex nav-links">
 					<li>
-						<Link to="home">Home</Link>
+						<Link
+							to="home"
+							activeClass="scroll-active"
+							smooth={true}
+							spy={true}
+							delay={700}
+							duration={2000}>
+							Home
+						</Link>
 					</li>
 					<li>
-						<Link to="work">Work</Link>
+						<Link
+							to="work"
+							activeClass="scroll-active"
+							smooth={true}
+							spy={true}
+							delay={700}
+							duration={3000}>
+							Work
+						</Link>
 					</li>
 					<li>
-						<Link to="about">About</Link>
+						<Link
+							to="about"
+							activeClass="scroll-active"
+							smooth={true}
+							spy={true}
+							delay={700}
+							duration={2000}>
+							About
+						</Link>
 					</li>
 					<li>
-						<Link to="contact">Contact</Link>
+						<Link
+							to="contact"
+							activeClass="scroll-active"
+							smooth={true}
+							spy={true}
+							delay={500}
+							duration={2000}>
+							Contact
+						</Link>
 					</li>
 				</ul>
 			</nav>
