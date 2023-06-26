@@ -3,7 +3,7 @@ import {Link} from 'react-scroll';
 import './style.css';
 export default function Header() {
 	return (
-		<header className="fixed flex justify-end align-center header">
+		<header className="fixed flex align-center header">
 			<nav className="navbar">
 				<ul className="flex nav-links">
 					<li>
@@ -12,8 +12,8 @@ export default function Header() {
 							activeClass="scroll-active"
 							smooth={true}
 							spy={true}
-							delay={700}
-							duration={2000}>
+							delay={300}
+							duration={1000}>
 							Home
 						</Link>
 					</li>
@@ -23,8 +23,8 @@ export default function Header() {
 							activeClass="scroll-active"
 							smooth={true}
 							spy={true}
-							delay={700}
-							duration={3000}>
+							delay={300}
+							duration={1000}>
 							Work
 						</Link>
 					</li>
@@ -34,8 +34,8 @@ export default function Header() {
 							activeClass="scroll-active"
 							smooth={true}
 							spy={true}
-							delay={700}
-							duration={2000}>
+							delay={300}
+							duration={1000}>
 							About
 						</Link>
 					</li>
@@ -45,8 +45,8 @@ export default function Header() {
 							activeClass="scroll-active"
 							smooth={true}
 							spy={true}
-							delay={500}
-							duration={2000}>
+							delay={300}
+							duration={1000}>
 							Contact
 						</Link>
 					</li>
