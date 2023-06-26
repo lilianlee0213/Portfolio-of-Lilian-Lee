@@ -6,6 +6,7 @@ import Work from './components/Work';
 import About from './components/About';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
+import Loader from './components/Loader';
 
 function App() {
 	return (
@@ -18,6 +19,7 @@ function App() {
 				<Contact />
 			</>
 			<Footer />
+			<Loader />
 		</div>
 	);
 }

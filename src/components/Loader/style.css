@@ -1,0 +1,13 @@
+.loader-container {
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: var(--black);
+	color: var(--orange);
+	z-index: 100000;
+}
+.loader {
+	font-size: 10vw;
+	margin-right: 3rem;
+	margin-bottom: 2rem;
+}
