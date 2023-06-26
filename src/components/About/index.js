@@ -13,44 +13,38 @@ export default function About() {
 					<AnimatedText text="Me"></AnimatedText>
 				</div>
 			</section>
-			<section
-				id="about"
-				className="relative grid justify-center section section-about">
+			<section id="about" className="relative section section-about">
 				<div className="about-image-container">
 					<motion.div
 						className="w-100 h-100 about-image"
 						whileHover={{scale: 1.05}}></motion.div>
 				</div>
-				<div className="flex flex-col about-content-container">
-					<div className="grid align-center about-content-stories-container">
-						<p className="text-center">
-							Wanna kwow who I am?
-							<br />
-							Chances are you'll find some answers here.
-						</p>
-						<div className="flex align-center justify-center about-content-stories">
-							<Story
-								imgArray={teachingImg}
-								className="story-teaching"
-								title="Work"
-							/>
-							<Story
-								imgArray={teachingImg}
-								className="story-teaching"
-								title="🍎"
-							/>
-							<Story
-								imgArray={goodTimesImg}
-								className="story-goodTimes"
-								title="Good times"
-							/>
-							<Story
-								imgArray={vibesImg}
-								className="story-vibes"
-								title="Vibes"
-							/>
-						</div>
+				<div className="flex flex-col about-stories-container">
+					<p className="text-center">
+						Wanna kwow who I am?
+						<br />
+						Chances are you'll find some answers here.
+					</p>
+					<div className="flex align-center justify-center about-stories">
+						<Story
+							imgArray={teachingImg}
+							className="story-teaching"
+							title="Work"
+						/>
+						<Story
+							imgArray={teachingImg}
+							className="story-teaching"
+							title="🍎"
+						/>
+						<Story
+							imgArray={goodTimesImg}
+							className="story-goodTimes"
+							title="Good times"
+						/>
+						<Story imgArray={vibesImg} className="story-vibes" title="Vibes" />
 					</div>
+				</div>
+				<div className="flex flex-col about-content-container">
 					<div className="about-content-desc">
 						<AnimatedText text="About Me" className="about-title" />
 						<h1 className="about-bold-text">Hey, I'm Lilian!</h1>

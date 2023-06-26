@@ -150,6 +150,6 @@ span.letter {
 	display: inline-block;
 }
 
-/* body::-webkit-scrollbar {
+body::-webkit-scrollbar {
 	display: none;
-} */
+}

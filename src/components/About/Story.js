@@ -49,7 +49,6 @@ export default function Story(props) {
 		const width = event.target.offsetWidth;
 		const clickX = event.clientX - event.target.getBoundingClientRect().left;
 		const isLeftSideClicked = clickX <= width / 2;
-		console.log(event.target);
 		if (isLeftSideClicked) {
 			// movePrevStory
 			if (counter > 0) {
