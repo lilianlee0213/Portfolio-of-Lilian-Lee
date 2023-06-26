@@ -13,6 +13,16 @@ const MarqueeSlide = () => {
 		</motion.div>
 	);
 };
+const MarqueeSlide2 = () => {
+	return (
+		<motion.div className="marquee-slide">
+			<span className="marquee-text">I'm a front-end developer</span>
+			<span className="marquee-text">I'm a front-end developer</span>
+			<span className="marquee-text">I'm a front-end developer</span>
+			<span className="marquee-text">I'm a front-end developer</span>
+		</motion.div>
+	);
+};
 export default function Home() {
 	const targetRef = useRef(null);
 	const inViewRef = useRef(null);
@@ -41,22 +51,6 @@ export default function Home() {
 								whileHover={{scale: 1.1}}
 								transition={{duration: 0.3}}></motion.div>
 						</motion.div>
-						<div className="absolute grid justify-space align-center hero-main-middle-text">
-							<motion.h1
-								style={{
-									opacity: isInView ? 1 : 0,
-									transition: 'all .6s cubic-bezier(0.17, 0.55, 0.55, 1) 1.3s',
-								}}>
-								I'm
-							</motion.h1>
-							<motion.h1
-								style={{
-									opacity: isInView ? 1 : 0,
-									transition: 'all .6s cubic-bezier(0.17, 0.55, 0.55, 1) 1.3s',
-								}}>
-								a Front-end Developer.
-							</motion.h1>
-						</div>
 					</motion.div>
 					<div className="absolute w-100 fw-700 uppercase text-center hero-main-text hero-main-top-text text-transparent">
 						<AnimatedText text="Hello There"></AnimatedText>
@@ -85,8 +79,8 @@ export default function Home() {
 						transition: 'all .6s cubic-bezier(0.17, 0.55, 0.55, 1) 1.3s',
 					}}>
 					<>
-						{MarqueeSlide()}
-						{MarqueeSlide()}
+						{MarqueeSlide2()}
+						{MarqueeSlide2()}
 					</>
 				</motion.div>
 			</main>
