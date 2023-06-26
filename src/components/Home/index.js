@@ -31,14 +31,7 @@ export default function Home() {
 					<div className="absolute w-100 fw-700 uppercase text-center hero-main-text hero-main-top-text">
 						<AnimatedText text="Hello There"></AnimatedText>
 					</div>
-					<motion.div className="absolute flex justify-center align-end hero-main-middle">
-						<motion.h1
-							style={{
-								opacity: isInView ? 1 : 0,
-								transition: 'all .6s cubic-bezier(0.17, 0.55, 0.55, 1) 1.3s',
-							}}>
-							I'm
-						</motion.h1>
+					<motion.div className="absolute hero-main-middle">
 						<motion.div
 							className="hero-main-middle-image"
 							initial={{scale: 1}}
@@ -48,15 +41,22 @@ export default function Home() {
 								whileHover={{scale: 1.1}}
 								transition={{duration: 0.3}}></motion.div>
 						</motion.div>
-						<motion.h1
-							className="text-center"
-							style={{
-								opacity: isInView ? 1 : 0,
-								transition: 'all .6s cubic-bezier(0.17, 0.55, 0.55, 1) 1.3s',
-							}}>
-							a Front-end <br />
-							Developer
-						</motion.h1>
+						<div className="absolute grid justify-space align-center hero-main-middle-text">
+							<motion.h1
+								style={{
+									opacity: isInView ? 1 : 0,
+									transition: 'all .6s cubic-bezier(0.17, 0.55, 0.55, 1) 1.3s',
+								}}>
+								I'm
+							</motion.h1>
+							<motion.h1
+								style={{
+									opacity: isInView ? 1 : 0,
+									transition: 'all .6s cubic-bezier(0.17, 0.55, 0.55, 1) 1.3s',
+								}}>
+								a Front-end Developer.
+							</motion.h1>
+						</div>
 					</motion.div>
 					<div className="absolute w-100 fw-700 uppercase text-center hero-main-text hero-main-top-text text-transparent">
 						<AnimatedText text="Hello There"></AnimatedText>
