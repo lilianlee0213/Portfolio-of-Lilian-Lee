@@ -7,7 +7,8 @@
 	height: 100vh;
 }
 .project {
-	grid-template-columns: repeat(2, 1fr);
+	overflow-x: hidden;
+	grid-template-rows: repeat(2, 1fr);
 	width: 100%;
 }
 .project-two,
@@ -15,35 +16,34 @@
 .project-four {
 	left: 100%;
 }
-
 .project-content-container {
-	padding-inline: 3rem;
+	padding-left: 2rem;
 }
 .project-index {
-	margin-bottom: 3rem;
-	font-size: 3vw;
+	margin-bottom: 1rem;
+	font-size: 2.5rem;
 }
 .project-skills {
 	font-size: 1rem;
 	text-transform: uppercase;
-	margin-bottom: 1rem;
+	margin-bottom: 0.2rem;
 }
 .project-skills li {
 	margin-left: 0.2rem;
 }
 .project-title {
-	font-size: 4.5vw;
+	font-size: 3rem;
 	font-weight: 600;
 	margin-bottom: 1.5rem;
 }
 .project-desc {
-	margin-bottom: 3rem;
+	margin-bottom: 1rem;
+	min-width: 450px;
+	padding-inline: 1.5rem 2rem;
 	line-height: 1.5;
-	width: 550px;
-	padding-inline: 1.5rem;
 }
 .project-desc li {
-	font-size: 1rem;
+	font-size: 14px;
 	list-style: disc;
 	margin-bottom: 0.5rem;
 }
@@ -63,38 +63,37 @@
 	background-color: var(--black);
 	color: white;
 }
+.project-image-container {
+	display: flex;
+	justify-content: center;
+	align-self: center;
+}
+.project-image-container .image {
+	width: 65vw;
+	aspect-ratio: 1;
+}
 .project-one {
 	background-color: #91dc71;
 }
 .project-one .image {
-	width: 50vw;
-	height: 50vw;
 	background: url('/src/images/projects/fictional.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 }
-
 .project-two {
-	/* background-color: var(--yellow); */
 	background-color: #ffe577;
 }
 .project-two .image {
-	width: 18vw;
-	height: 36vw;
-	margin: 0 auto;
 	background: url('/src/images/projects/acnh-player.png');
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	background-position: center;
 }
 .project-three {
 	background-color: var(--blue);
 }
 .project-three .image {
-	width: 40vw;
-	height: 40vw;
-	margin: 0 auto;
 	background: url('/src/images/projects/wetube.png');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -104,11 +103,66 @@
 	background-color: var(--pink);
 }
 .project-four .image {
-	width: 30vw;
-	height: 45vw;
-	margin: 0 auto;
 	background: url('/src/images/projects/netflix.png');
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 	background-position: center;
+}
+
+@media only screen and (min-width: 768px) {
+	.project-index {
+		font-size: 3rem;
+	}
+	.project-skills {
+		font-size: 1.1rem;
+		text-transform: uppercase;
+		margin-bottom: 0.2rem;
+	}
+	.project-title {
+		font-size: 3.5rem;
+	}
+	.project-desc {
+		max-width: 800px;
+	}
+	.project-desc li {
+		font-size: 1rem;
+	}
+	.project-image-container .image {
+		width: 50vw;
+		aspect-ratio: 1;
+	}
+}
+@media only screen and (min-width: 992px) {
+	.project-title {
+		margin-bottom: 3rem;
+	}
+	.project {
+		grid-template-rows: inherit;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.project-content-container {
+		justify-content: center;
+	}
+}
+@media only screen and (min-width: 1400px) {
+	.project-index {
+		font-size: 3.5rem;
+	}
+	.project-skills {
+		font-size: 1.2rem;
+	}
+	.project-title {
+		font-size: 4.5rem;
+		margin-bottom: 2rem;
+	}
+	.project-desc {
+		max-width: 750px;
+	}
+	.project-desc li {
+		font-size: 1.2rem;
+	}
+	.project-image-container .image {
+		width: 700px;
+		aspect-ratio: 1;
+	}
 }

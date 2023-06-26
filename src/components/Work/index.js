@@ -35,11 +35,11 @@ export default function Work() {
 				ref={targetRef}
 				style={{opacity}}>
 				<motion.div className="sticky projects">
-					<div className="absolute grid align-center h-100 project project-one">
+					<div className="absolute grid h-100 project project-one">
 						<div className="project-image-container">
 							<div className="image"></div>
 						</div>
-						<div className="flex flex-col justify-center project-content-container">
+						<div className="flex flex-col project-content-container">
 							<small className="project-index">01.</small>
 							<div className="project-skills">
 								<ul className="flex">
@@ -79,13 +79,13 @@ export default function Work() {
 						</div>
 					</div>
 					<motion.div
-						className="absolute grid align-center h-100 project project-two"
+						className="absolute grid h-100 project project-two"
 						style={{x: project2X}}>
 						<div className="project-image-container">
 							<div className="image"></div>
 						</div>
-						<div className="flex flex-col justify-center project-content-container">
-							<small className="project-index">02</small>
+						<div className="flex flex-col project-content-container">
+							<small className="project-index">02.</small>
 							<div className="project-skills">
 								<ul className="flex">
 									<li>React -</li>
@@ -119,12 +119,12 @@ export default function Work() {
 						</div>
 					</motion.div>
 					<motion.div
-						className="absolute grid align-center h-100 project project-three"
+						className="absolute grid h-100 project project-three"
 						style={{x: project3X}}>
 						<div className="project-image-container">
 							<div className="image"></div>
 						</div>
-						<div className="flex flex-col justify-center project-content-container">
+						<div className="flex flex-col project-content-container">
 							<small className="project-index">03.</small>
 							<div className="project-skills">
 								<ul className="flex">
@@ -160,12 +160,12 @@ export default function Work() {
 						</div>
 					</motion.div>
 					<motion.div
-						className="absolute grid align-center h-100 project project-four"
+						className="absolute grid h-100 project project-four"
 						style={{x: project4X}}>
 						<div className="project-image-container">
 							<div className="image"></div>
 						</div>
-						<div className="flex flex-col justify-center project-content-container">
+						<div className="flex flex-col project-content-container">
 							<small className="project-index">04.</small>
 							<div className="project-skills">
 								<ul className="flex">
