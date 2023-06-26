@@ -7,20 +7,43 @@ import About from './components/About';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
 import Loader from './components/Loader';
+import {useEffect, useState} from 'react';
 
 function App() {
+	const [isLoading, setIsLoading] = useState(false);
+	const [percent, setPercent] = useState(0);
+	useEffect(() => {
+		setIsLoading(true);
+		let currentPercent = 0;
+		const interval = setInterval(() => {
+			currentPercent += 1;
+			setPercent(currentPercent);
+			if (currentPercent === 100) {
+				clearInterval(interval);
+				setIsLoading(false);
+			}
+		}, 40);
+		return () => {
+			clearInterval(interval);
+		};
+	}, []);
 	return (
-		<div>
-			<Header />
-			<>
-				<Home />
-				<Work />
-				<About />
-				<Contact />
-			</>
-			<Footer />
-			<Loader />
-		</div>
+		<>
+			{isLoading ? (
+				<Loader percent={percent} isLoading={isLoading} />
+			) : (
+				<>
+					<Header />
+					<>
+						<Home />
+						<Work />
+						<About />
+						<Contact />
+					</>
+					<Footer />
+				</>
+			)}
+		</>
 	);
 }
 
