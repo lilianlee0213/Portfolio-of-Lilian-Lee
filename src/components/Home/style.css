@@ -91,7 +91,11 @@
 		transform: translateX(-100%);
 	}
 }
-
+@media only screen and (max-width: 575px) {
+	.hero-main-text {
+		font-size: 4rem;
+	}
+}
 @media only screen and (min-width: 768px) {
 	.hero-main-text {
 		font-size: 7.2rem;
@@ -176,7 +180,8 @@
 }
 .section-intro-text {
 	width: 80%;
-	font-size: 5vw;
+	font-size: 5.5vw;
+	font-weight: 700;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
