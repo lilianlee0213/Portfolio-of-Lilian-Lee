@@ -110,12 +110,12 @@ export default function Work() {
 									Horizons(ACNH) free RESTful API
 								</li>
 								<li>
-									Allowed users to discover various music with recommended songs
-									by ACNH popular villagers
+									Allowed users to discover various music with top songs and
+									recommended songs by ACNH popular villagers
 								</li>
 								<li>
-									Built a music player with features such as play, pause, and
-									timeline
+									Built a music player with play, pause, and timeline control
+									features
 								</li>
 								<li>
 									Designed the interface with a vibe reminiscent of Animal
@@ -123,8 +123,16 @@ export default function Work() {
 								</li>
 							</ul>
 							<div className="flex uppercase project-links">
-								<a href="">Live Site</a>
-								<a href="">Github Repo</a>
+								<a
+									href="https://lilianlee0213.github.io/ACNH-player/"
+									target="_blank">
+									Live Site
+								</a>
+								<a
+									href="https://github.com/lilianlee0213/ACNH-player"
+									target="_blank">
+									Github Repo
+								</a>
 							</div>
 						</div>
 					</motion.div>
