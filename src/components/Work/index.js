@@ -73,8 +73,18 @@ export default function Work() {
 								</li>
 							</ul>
 							<div className="flex uppercase project-links">
-								<a href="">Live Site</a>
-								<a href="">Github Repo</a>
+								<a
+									href="https://fictional-typeface-clone-by-lilianlee.netlify.app/"
+									target="_blank"
+									rel="noopener noreferrer">
+									Live Site
+								</a>
+								<a
+									href="https://github.com/lilianlee0213/fictional-typeface"
+									target="_blank"
+									rel="noopener noreferrer">
+									Github Repo
+								</a>
 							</div>
 						</div>
 					</div>
