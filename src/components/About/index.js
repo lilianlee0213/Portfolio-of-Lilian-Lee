@@ -1,6 +1,6 @@
 import './style.css';
 import {motion} from 'framer-motion';
-import {teachingImg, goodTimesImg, vibesImg} from './stories';
+import {teachingImg, goodTimesImg, vibesImg, workImg} from './stories';
 import AnimatedText from '../AnimatedText/animatedText';
 import Story from './Story';
 
@@ -26,11 +26,7 @@ export default function About() {
 						Chances are you'll find some answers here.
 					</p>
 					<div className="flex align-center justify-center about-stories">
-						<Story
-							imgArray={teachingImg}
-							className="story-teaching"
-							title="Work"
-						/>
+						<Story imgArray={workImg} className="story-work" title="Work" />
 						<Story
 							imgArray={teachingImg}
 							className="story-teaching"
