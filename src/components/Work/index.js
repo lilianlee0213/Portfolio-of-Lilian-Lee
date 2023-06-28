@@ -67,10 +67,6 @@ export default function Work() {
 									Built a fun shooting game called <em>"Fire Mode"</em> that
 									users can shoot text element.
 								</li>
-								<li>
-									Enhanced the user experience by incorporating animations and
-									sound effects for a more engaging font exploration.
-								</li>
 							</ul>
 							<div className="flex uppercase project-links">
 								<a
@@ -125,12 +121,14 @@ export default function Work() {
 							<div className="flex uppercase project-links">
 								<a
 									href="https://lilianlee0213.github.io/ACNH-player/"
-									target="_blank">
+									target="_blank"
+									rel="noopener noreferrer">
 									Live Site
 								</a>
 								<a
 									href="https://github.com/lilianlee0213/ACNH-player"
-									target="_blank">
+									target="_blank"
+									rel="noopener noreferrer">
 									Github Repo
 								</a>
 							</div>
@@ -172,8 +170,16 @@ export default function Work() {
 								</li>
 							</ul>
 							<div className="flex uppercase project-links">
-								<a href="">Live Site</a>
-								<a href="">Github Repo</a>
+								<a
+									href="https://wetube-clone.herokuapp.com/"
+									rel="noopener noreferrer">
+									Live Site
+								</a>
+								<a
+									href="https://github.com/lilianlee0213/wetube-reloaded"
+									rel="noopener noreferrer">
+									Github Repo
+								</a>
 							</div>
 						</div>
 					</motion.div>
@@ -193,28 +199,35 @@ export default function Work() {
 									<li>Rest Api</li>
 								</ul>
 							</div>
-							<AnimatedText text="Netflix" className="project-title" />
+							<AnimatedText text="Nomflix" className="project-title" />
 							<ul className="project-desc">
 								<li>
 									Information on movies/tvs pulled from{' '}
 									<em>Movie Database(TMDB)</em> API
 								</li>
 								<li>
-									Using pagination, movies and tv-shows can be pulled as users
-									request them
+									Users can easily search for specific movies or TV shows and
+									explore various categories such as "Now Playing", "Popular",
+									and "Top Rated".
 								</li>
 								<li>
 									Incorporated engaging animations and interactive features like
 									sliders and modals using Framer Motion
 								</li>
-								<li>
-									Catagorized movies/tvs as "Now Playing", "Popular", and "Top
-									Rated"
-								</li>
 							</ul>
 							<div className="flex uppercase project-links">
-								<a href="">Live Site</a>
-								<a href="">Github Repo</a>
+								<a
+									href="https://lilianlee0213.github.io/netflix-clone/"
+									target="_blank"
+									rel="noopener noreferrer">
+									Live Site
+								</a>
+								<a
+									href="https://github.com/lilianlee0213/netflix-clone"
+									target="_blank"
+									rel="noopener noreferrer">
+									Github Repo
+								</a>
 							</div>
 						</div>
 					</motion.div>
