@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.cfb97e72.css",
+    "main.js": "/portfolio/static/js/main.e0587ee7.js",
+    "static/media/netflix.png": "/portfolio/static/media/netflix.94cba7c4fa54f811c526.png",
+    "static/media/wetube.png": "/portfolio/static/media/wetube.b800d6cf435eb605493c.png",
+    "static/media/vibes4.jpg": "/portfolio/static/media/vibes4.2696784b7ac209819bb0.jpg",
+    "static/media/acnh-player.png": "/portfolio/static/media/acnh-player.5ba226213f6abd0e29f4.png",
+    "static/media/teaching3.jpg": "/portfolio/static/media/teaching3.d57e1697d2f95fbe3028.jpg",
+    "static/media/goodTimes4.jpg": "/portfolio/static/media/goodTimes4.beb42a2ba881e1b662bc.jpg",
+    "static/media/goodTimes5.jpg": "/portfolio/static/media/goodTimes5.d0f87ae66010b760d98e.jpg",
+    "static/media/goodTimes2.jpg": "/portfolio/static/media/goodTimes2.f5109d1fce9cdd1868c2.jpg",
+    "static/media/vibes2.jpg": "/portfolio/static/media/vibes2.36b11b94be6cb602cf77.jpg",
+    "static/media/teaching1.jpg": "/portfolio/static/media/teaching1.870fd91b950f804fe2d4.jpg",
+    "static/media/goodTimes3.jpg": "/portfolio/static/media/goodTimes3.b4d51e846c934cd7c751.jpg",
+    "static/media/vibes5.jpg": "/portfolio/static/media/vibes5.43b7f3aa3ab883011999.jpg",
+    "static/media/goodTimes1.jpg": "/portfolio/static/media/goodTimes1.6905946363635d71bfd1.jpg",
+    "static/media/vibes1.jpg": "/portfolio/static/media/vibes1.50f10527ea24e16e046e.jpg",
+    "static/media/fictional.png": "/portfolio/static/media/fictional.d5f6a5aa26cd5b438a89.png",
+    "static/media/teaching4.jpg": "/portfolio/static/media/teaching4.8702718d52cf8db48afe.jpg",
+    "static/media/profile.jpg": "/portfolio/static/media/profile.e0a4a72f84cc895c0900.jpg",
+    "static/media/vibes3.jpg": "/portfolio/static/media/vibes3.04c5def7fbc5e6ff7915.jpg",
+    "static/media/teaching2.jpg": "/portfolio/static/media/teaching2.aa4617069d4d53585f3b.jpg",
+    "index.html": "/portfolio/index.html",
+    "main.cfb97e72.css.map": "/portfolio/static/css/main.cfb97e72.css.map",
+    "main.e0587ee7.js.map": "/portfolio/static/js/main.e0587ee7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cfb97e72.css",
+    "static/js/main.e0587ee7.js"
+  ]
+}
