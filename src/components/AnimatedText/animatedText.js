@@ -1,5 +1,5 @@
 import {motion, useInView} from 'framer-motion';
-import {useEffect, useRef} from 'react';
+import {useRef} from 'react';
 const textReveal = {
 	animate: {
 		transition: {

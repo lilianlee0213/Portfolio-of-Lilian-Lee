@@ -9,19 +9,26 @@ export default function Contact() {
 			<div className="contact-links">
 				<ul className="flex justify-space">
 					<li className="contact-link">
-						<a href="mailto:lilianlee0213@gmail.com" target="_blank">
+						<a
+							href="mailto:lilianlee0213@gmail.com"
+							target="_blank"
+							rel="noreferrer">
 							Email
 						</a>
 					</li>
 					<li className="contact-link">
 						<a
 							href="https://www.linkedin.com/in/lilian-lee-64720b240/"
-							target="_blank">
+							target="_blank"
+							rel="noreferrer">
 							LinkedIn
 						</a>
 					</li>
 					<li className="contact-link">
-						<a href="https://github.com/lilianlee0213" target="_blank">
+						<a
+							href="https://github.com/lilianlee0213"
+							target="_blank"
+							rel="noreferrer">
 							Github
 						</a>
 					</li>
