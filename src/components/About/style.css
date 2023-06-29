@@ -62,7 +62,7 @@
 	line-height: 1.2;
 }
 .about-stories {
-	gap: 1.5rem;
+	justify-content: space-evenly;
 	text-align: center;
 }
 .story-cover {
@@ -162,6 +162,10 @@
 }
 
 @media only screen and (min-width: 576px) {
+	.about-stories {
+		justify-content: center;
+		gap: 1.5rem;
+	}
 	.about-stories-container p {
 		font-size: 1rem;
 	}
