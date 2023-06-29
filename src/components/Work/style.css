@@ -114,9 +114,17 @@
 		height: 400vh;
 		color: black;
 	}
+	.projects {
+		position: inherit;
+	}
 	.project {
 		position: inherit;
 		transform: translateX(0) !important;
+	}
+	.project-two,
+	.project-three,
+	.project-four {
+		left: inherit !important;
 	}
 	.project-image-container {
 		padding-top: 1rem;
