@@ -92,13 +92,17 @@
 		max-width: 250px;
 	}
 	.marquee-container {
-		width: 150%;
+		left: 0;
+		width: 100%;
+		overflow-x: hidden;
 	}
 	.marquee-1 {
-		transform: rotate(10deg);
+		transform: rotate(0deg);
+		opacity: 1 !important;
+		top: 90%;
 	}
 	.marquee-2 {
-		transform: rotate(-10deg);
+		display: none;
 	}
 }
 @media only screen and (min-width: 768px) {
