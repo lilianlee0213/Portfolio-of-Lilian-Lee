@@ -15,6 +15,7 @@ This project is built using the following technologies:
 
 - Smooth scrolling navigation using React-Scroll library.
 - Animated project slide using useScroll from Framer Motion.
+- Responsive design for optimal viewing on different devices.
 
 ## Live Site
 
