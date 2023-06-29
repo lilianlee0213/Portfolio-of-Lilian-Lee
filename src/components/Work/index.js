@@ -43,8 +43,8 @@ export default function Work() {
 							<small className="project-index">01.</small>
 							<div className="project-skills">
 								<ul className="flex">
-									<li>html -</li>
-									<li>css -</li>
+									<li>html |</li>
+									<li>css |</li>
 									<li>javascript</li>
 								</ul>
 							</div>
@@ -94,8 +94,8 @@ export default function Work() {
 							<small className="project-index">02.</small>
 							<div className="project-skills">
 								<ul className="flex">
-									<li>React -</li>
-									<li>React Query -</li>
+									<li>React |</li>
+									<li>React Query |</li>
 									<li>Rest Api</li>
 								</ul>
 							</div>
@@ -144,11 +144,11 @@ export default function Work() {
 							<small className="project-index">03.</small>
 							<div className="project-skills">
 								<ul className="flex">
-									<li>html -</li>
-									<li>css -</li>
-									<li>pug -</li>
-									<li>NodeJS -</li>
-									<li>MongoDB -</li>
+									<li>html |</li>
+									<li>css |</li>
+									<li>pug |</li>
+									<li>NodeJS |</li>
+									<li>MongoDB |</li>
 									<li>Express</li>
 								</ul>
 							</div>

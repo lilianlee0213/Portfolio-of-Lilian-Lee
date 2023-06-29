@@ -109,7 +109,42 @@
 	background-size: contain;
 	background-position: center;
 }
-
+@media only screen and (max-width: 575px) {
+	.work {
+		height: 400vh;
+		color: black;
+	}
+	.project {
+		position: inherit;
+		transform: translateX(0) !important;
+	}
+	.project-image-container {
+		padding-top: 1rem;
+	}
+	.project-content-container {
+		padding: 1rem;
+	}
+	.project-index {
+		font-size: 2rem;
+	}
+	.project-skills {
+		font-size: 0.7rem;
+	}
+	.project-title {
+		font-size: 2.2rem;
+	}
+	.project-desc {
+		min-width: 300px;
+		line-height: 1.2;
+	}
+	.project-desc li {
+		font-size: 12px;
+	}
+	.project-links a {
+		padding: 0.8rem 1rem;
+		font-size: 0.8rem;
+	}
+}
 @media only screen and (min-width: 768px) {
 	.project-index {
 		font-size: 3rem;
