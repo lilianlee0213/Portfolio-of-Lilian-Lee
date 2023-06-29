@@ -79,7 +79,26 @@
 }
 @media only screen and (max-width: 575px) {
 	.hero-main-text {
-		font-size: 4rem;
+		font-size: 3.5rem;
+	}
+	.hero-main-top-text {
+		top: 20%;
+	}
+	.hero-main-bottom-text {
+		bottom: 20%;
+	}
+	.hero-main-middle-image {
+		min-width: 180px;
+		max-width: 250px;
+	}
+	.marquee-container {
+		width: 150%;
+	}
+	.marquee-1 {
+		transform: rotate(10deg);
+	}
+	.marquee-2 {
+		transform: rotate(-10deg);
 	}
 }
 @media only screen and (min-width: 768px) {
