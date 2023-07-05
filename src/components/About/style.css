@@ -62,16 +62,15 @@
 	line-height: 1.2;
 }
 .about-stories {
-	/* justify-content: space-evenly; */
+	justify-content: space-evenly;
 	text-align: center;
-	gap: 0.5rem;
 }
 .story-cover {
 	margin-bottom: 0.4rem;
 	padding: 2px;
 	width: 4rem;
 	aspect-ratio: 1;
-	border-radius: 50%;
+	border-radius: 50px;
 	background: linear-gradient(
 		180deg,
 		rgba(34, 113, 195, 1) 0%,
@@ -85,7 +84,7 @@
 	background-size: cover;
 	background-position: center;
 	border: 2px solid var(--white);
-	border-radius: 50%;
+	border-radius: 50px;
 }
 .story-work .story-cover-image {
 	background-image: url('/src/images/stories/work1.jpg');
