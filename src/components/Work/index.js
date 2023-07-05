@@ -144,9 +144,8 @@ export default function Work() {
 							<small className="project-index">03.</small>
 							<div className="project-skills">
 								<ul className="flex">
-									<li>html |</li>
-									<li>css |</li>
-									<li>pug |</li>
+									<li>Pug |</li>
+									<li>SCSS |</li>
 									<li>NodeJS |</li>
 									<li>MongoDB |</li>
 									<li>Express</li>
