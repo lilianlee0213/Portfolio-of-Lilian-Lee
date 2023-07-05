@@ -8,6 +8,7 @@
 }
 .project {
 	overflow-x: hidden;
+	/* overflow-y: hidden; */
 	grid-template-rows: repeat(2, 1fr);
 	width: 100%;
 }
@@ -67,10 +68,11 @@
 	display: flex;
 	justify-content: center;
 	align-self: center;
-	padding-top: 5rem;
+	padding-top: 3rem;
 }
 .project-image-container .image {
-	width: 65vw;
+	width: 50vw;
+	max-width: 550px;
 	aspect-ratio: 1;
 }
 .project-one {
@@ -155,10 +157,6 @@
 	}
 	.project-desc li {
 		font-size: 1rem;
-	}
-	.project-image-container .image {
-		width: 50vw;
-		aspect-ratio: 1;
 	}
 }
 @media only screen and (max-width: 991px) {
