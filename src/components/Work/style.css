@@ -110,22 +110,6 @@
 	background-position: center;
 }
 @media only screen and (max-width: 575px) {
-	.work {
-		height: 400vh;
-		color: black;
-	}
-	.projects {
-		position: inherit;
-	}
-	.project {
-		position: inherit;
-		transform: translateX(0) !important;
-	}
-	.project-two,
-	.project-three,
-	.project-four {
-		left: inherit !important;
-	}
 	.project-image-container {
 		padding-top: 1rem;
 	}
@@ -153,6 +137,7 @@
 		font-size: 0.8rem;
 	}
 }
+
 @media only screen and (min-width: 768px) {
 	.project-index {
 		font-size: 3rem;
@@ -174,6 +159,24 @@
 	.project-image-container .image {
 		width: 50vw;
 		aspect-ratio: 1;
+	}
+}
+@media only screen and (max-width: 991px) {
+	.work {
+		height: 400vh;
+		color: black;
+	}
+	.projects {
+		position: inherit;
+	}
+	.project {
+		position: inherit;
+		transform: translateX(0) !important;
+	}
+	.project-two,
+	.project-three,
+	.project-four {
+		left: inherit !important;
 	}
 }
 @media only screen and (min-width: 992px) {
