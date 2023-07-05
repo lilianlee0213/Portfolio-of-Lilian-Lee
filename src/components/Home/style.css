@@ -91,19 +91,6 @@
 		min-width: 180px;
 		max-width: 250px;
 	}
-	.marquee-container {
-		left: 0;
-		width: 100%;
-		overflow-x: hidden;
-	}
-	.marquee-1 {
-		transform: rotate(0deg);
-		opacity: 1 !important;
-		top: 90%;
-	}
-	.marquee-2 {
-		display: none;
-	}
 }
 @media only screen and (min-width: 768px) {
 	.hero-main-text {
@@ -120,6 +107,21 @@
 	}
 	.marquee-text {
 		font-size: 1.2rem;
+	}
+}
+@media only screen and (max-width: 991px) {
+	.marquee-container {
+		left: 0;
+		width: 100%;
+		overflow-x: hidden;
+	}
+	.marquee-1 {
+		transform: rotate(0deg);
+		opacity: 1 !important;
+		top: 95%;
+	}
+	.marquee-2 {
+		display: none;
 	}
 }
 @media only screen and (min-width: 992px) {
