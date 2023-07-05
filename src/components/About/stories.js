@@ -1,3 +1,6 @@
+import work1 from '../../images/stories/work1.jpg';
+import work2 from '../../images/stories/work2.jpg';
+import work3 from '../../images/stories/work3.jpg';
 import teaching1 from '../../images/stories/teaching1.jpg';
 import teaching2 from '../../images/stories/teaching2.jpg';
 import teaching3 from '../../images/stories/teaching3.jpg';
@@ -12,9 +15,6 @@ import vibes2 from '../../images/stories/vibes2.jpg';
 import vibes3 from '../../images/stories/vibes3.jpg';
 import vibes4 from '../../images/stories/vibes4.jpg';
 import vibes5 from '../../images/stories/vibes5.jpg';
-import work1 from '../../images/stories/work1.jpg';
-import work2 from '../../images/stories/work2.jpg';
-import work3 from '../../images/stories/work3.jpg';
 
 export const workImg = [work1, work2, work3];
 export const teachingImg = [teaching1, teaching2, teaching3, teaching4];

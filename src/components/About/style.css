@@ -87,7 +87,7 @@
 	border: 2px solid var(--white);
 }
 .story-work .story-cover-image {
-	background-image: url('/src/images/stories/work2.jpg');
+	background-image: url('/src/images/stories/work1.jpg');
 	background-position: center;
 }
 .story-teaching .story-cover-image {

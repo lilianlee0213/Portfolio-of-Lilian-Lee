@@ -14,7 +14,7 @@ export default function Story(props) {
 	const [counter, setCounter] = useState(0);
 	const [isModalOpened, setIsModalOpened] = useState(false);
 	const [allViewed, setAllViewed] = useState(false);
-	const backgroundRef = useRef(null);
+	const backgroundRef = useRef(props.imgArray[0]);
 
 	useEffect(() => {
 		const background = backgroundRef.current;
@@ -87,7 +87,10 @@ export default function Story(props) {
 					))}
 				</div>
 				<div className="h-100 story-modal" onClick={handleModalClick}>
-					<div className="story-modal-image" ref={backgroundRef}></div>
+					<div
+						className="story-modal-image"
+						ref={backgroundRef}
+						style={{backgroundImage: `url('${props.imgArray[0]}')`}}></div>
 				</div>
 			</div>
 			<div
